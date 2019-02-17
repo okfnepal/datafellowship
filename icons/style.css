@@ -1,0 +1,59 @@
+@font-face {
+  font-family: 'fellowship-icon';
+  src:  url('fonts/fellowship-icon.eot?25fb77');
+  src:  url('fonts/fellowship-icon.eot?25fb77#iefix') format('embedded-opentype'),
+    url('fonts/fellowship-icon.ttf?25fb77') format('truetype'),
+    url('fonts/fellowship-icon.woff?25fb77') format('woff'),
+    url('fonts/fellowship-icon.svg?25fb77#fellowship-icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+i {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'fellowship-icon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-opportunities:before {
+  content: "\e900";
+}
+.icon-Networking:before {
+  content: "\e901";
+}
+.icon-role-model:before {
+  content: "\e902";
+}
+.icon-experience:before {
+  content: "\e903";
+}
+.icon-ecosystem:before {
+  content: "\e904";
+}
+.icon-achievement:before {
+  content: "\e905";
+}
+.icon-facebook:before {
+  content: "\e906";
+}
+.icon-twitter:before {
+  content: "\e907";
+}
+.icon-email:before {
+  content: "\e908";
+}
+.icon-about-us:before {
+  content: "\e909";
+}
+.icon-link:before {
+  content: "\e90a";
+}
