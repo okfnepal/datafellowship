@@ -1,0 +1,31 @@
+.header{
+    min-height: 80px;
+    max-height: 80px;
+    background: #fff !important;;
+
+}
+.toolbar{
+    width: 80%;
+    margin: auto;
+}
+.logo {
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    height: 60px;
+    padding: 30px 0px;
+    max-height: 60px;
+}
+.navigation-bar{
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    padding: 40px;
+    float: right;
+}
+
+.navigation-bar button{
+    color: Red
+}
