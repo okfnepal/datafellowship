@@ -644,7 +644,7 @@
                         }, "Knowledge Partner"), P.map(function (t, n) {
                             return o.a.createElement("img", {
                                 className: e.img,
-                                src:  t.url,
+                                src: t.url,
                                 alt: ""
                             })
                         }))))
