@@ -41,7 +41,7 @@
                 body: "Any woman who is a current resident of Nepal are eligible to apply. But we encourage final year students who are currently pursuing their bachelor\u2019s degree."
             }, {
                 title: "How can I apply?",
-                body: "Complete the online application, Selected fellow will be informed by 25th March 2019 gardeum."
+                body: "Complete the online application, Selected fellow will be informed by 25th March 2019."
             }, {
                 title: "How many fellows will be recruited this year?",
                 body: "We will be recruiting only 10 fellows for the first batch."
