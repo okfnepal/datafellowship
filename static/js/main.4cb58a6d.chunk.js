@@ -588,7 +588,7 @@
                                 className: e.logoList
                             }, o.a.createElement("a", {href: t.urlLink}, o.a.createElement("img", {
                                 className: e.img,
-                                src:   t.url,
+                                src: t.url,
                                 alt: ""
                             })))
                         })))))
@@ -635,7 +635,7 @@
                         }, "Supported by"), this.logo.map(function (t, n) {
                             return o.a.createElement("img", {
                                 className: e.img,
-                                src:   t.url,
+                                src: t.url,
                                 alt: ""
                             })
                         })), o.a.createElement(Q.a, {xs: 12, sm: 12, md: 4}, o.a.createElement(w.a, {
@@ -644,7 +644,7 @@
                         }, "Knowledge Partner"), P.map(function (t, n) {
                             return o.a.createElement("img", {
                                 className: e.img,
-                                src:  + t.url,
+                                src:  t.url,
                                 alt: ""
                             })
                         }))))
