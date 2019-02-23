@@ -139,7 +139,7 @@
 
                 return Object(m.a)(t, e), Object(c.a)(t, [{
                     key: "scrollTo", value: function (e) {
-                        if ("Apply" === e) return window.location.href = "https://docs.google.com/forms/d/1ki7U2WRPyWtvQAdnrqYZg9iC1LZsfHaivaVZEvC1tcA";
+                        if ("Apply" === e) return window.location.href = "https://docs.google.com/forms/d/e/1FAIpQLSeOzyF7kVzUwH3PYb9J4Lzt-42CraNrf8lquHLUrL0z1Vj3Mg/viewform";
                         q.scroller.scrollTo(e, {duration: 800, delay: 0, smooth: "easeInOutQuart", offset: -100})
                     }
                 }, {
@@ -303,7 +303,7 @@
 
                 return Object(m.a)(t, e), Object(c.a)(t, [{
                     key: "apply", value: function () {
-                        return window.location.href = "https://docs.google.com/forms/d/1ki7U2WRPyWtvQAdnrqYZg9iC1LZsfHaivaVZEvC1tcA"
+                        return window.location.href = "https://docs.google.com/forms/d/e/1FAIpQLSeOzyF7kVzUwH3PYb9J4Lzt-42CraNrf8lquHLUrL0z1Vj3Mg/viewform"
                     }
                 }, {
                     key: "render", value: function () {
