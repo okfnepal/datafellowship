@@ -1,13 +1,13 @@
 {
-  "main.css": "/Open-Data-Fellowship/static/css/main.787a06f4.chunk.css",
-  "main.js": "/Open-Data-Fellowship/static/js/main.adb627a4.chunk.js",
-  "main.js.map": "/Open-Data-Fellowship/static/js/main.adb627a4.chunk.js.map",
-  "static/js/1.e49ae6d4.chunk.js": "/Open-Data-Fellowship/static/js/1.e49ae6d4.chunk.js",
-  "static/js/1.e49ae6d4.chunk.js.map": "/Open-Data-Fellowship/static/js/1.e49ae6d4.chunk.js.map",
-  "runtime~main.js": "/Open-Data-Fellowship/static/js/runtime~main.ff931345.js",
-  "runtime~main.js.map": "/Open-Data-Fellowship/static/js/runtime~main.ff931345.js.map",
-  "static/css/main.787a06f4.chunk.css.map": "/Open-Data-Fellowship/static/css/main.787a06f4.chunk.css.map",
-  "index.html": "/Open-Data-Fellowship/index.html",
-  "precache-manifest.2d8c0edcb8666b689958b132bf58d7a7.js": "/Open-Data-Fellowship/precache-manifest.2d8c0edcb8666b689958b132bf58d7a7.js",
-  "service-worker.js": "/Open-Data-Fellowship/service-worker.js"
+  "main.css": "/datafellowship/static/css/main.787a06f4.chunk.css",
+  "main.js": "/datafellowship/static/js/main.404405b9.chunk.js",
+  "main.js.map": "/datafellowship/static/js/main.404405b9.chunk.js.map",
+  "static/js/1.e49ae6d4.chunk.js": "/datafellowship/static/js/1.e49ae6d4.chunk.js",
+  "static/js/1.e49ae6d4.chunk.js.map": "/datafellowship/static/js/1.e49ae6d4.chunk.js.map",
+  "runtime~main.js": "/datafellowship/static/js/runtime~main.f1b3d037.js",
+  "runtime~main.js.map": "/datafellowship/static/js/runtime~main.f1b3d037.js.map",
+  "static/css/main.787a06f4.chunk.css.map": "/datafellowship/static/css/main.787a06f4.chunk.css.map",
+  "index.html": "/datafellowship/index.html",
+  "precache-manifest.97c945bd8a8d3af11b02700b84e00ff7.js": "/datafellowship/precache-manifest.97c945bd8a8d3af11b02700b84e00ff7.js",
+  "service-worker.js": "/datafellowship/service-worker.js"
 }
