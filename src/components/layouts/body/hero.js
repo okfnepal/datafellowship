@@ -1,6 +1,6 @@
-import React, {Component, Fragment} from 'react'
+import React, { Component, Fragment } from 'react'
 import Grid from '@material-ui/core/Grid'
-import {withStyles} from '@material-ui/core/styles';
+import { withStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 
 
@@ -36,7 +36,7 @@ const styles = (theme) => ({
         width: '100%',
     },
     content: {
-        width: '50%'
+        width: '50%',
     },
     h1: {
         fontSize: '50px',
@@ -81,28 +81,28 @@ const styles = (theme) => ({
 
     },
 
-        [theme.breakpoints.down('sm')]: {
-            content: {
-                width: '90%'
-            },
-            h1: {
-                fontSize: '35px',
-                color: '#fff',
-                fontWeight: '400',
-                lineHeight: '70px',
-                margin: 0,
+    [theme.breakpoints.down('sm')]: {
+        content: {
+            width: '90%'
+        },
+        h1: {
+            fontSize: '35px',
+            color: '#fff',
+            fontWeight: '400',
+            lineHeight: '70px',
+            margin: 0,
 
 
-            },
-            h2: {
-                fontSize: '30px',
-                fontWeight: '200',
-                margin: '20px 0'
-            },
-            paragraph: {
-                fontSize: '1.1625rem',
+        },
+        h2: {
+            fontSize: '30px',
+            fontWeight: '200',
+            margin: '20px 0'
+        },
+        paragraph: {
+            fontSize: '1.1625rem',
 
-            },
+        },
 
     },
 
@@ -111,19 +111,19 @@ const styles = (theme) => ({
 
 
 class Hero extends Component {
-    apply(){
+    apply() {
         return window.location.href = "https://docs.google.com/forms/d/1ki7U2WRPyWtvQAdnrqYZg9iC1LZsfHaivaVZEvC1tcA";
     }
 
 
     render() {
-        const {classes} = this.props;
+        const { classes } = this.props;
         return (
             <Fragment>
                 <div className={classes.hero}>
                     <div className={classes.overlay}></div>
                     <Grid className={classes.contentWapper} container direction="row" justify="center"
-                          alignItems="center">
+                        alignItems="center">
                         <Grid className={classes.content} container>
                             <Grid item xs={12}>
                                 <h1 className={classes.h1}>
@@ -138,15 +138,15 @@ class Hero extends Component {
                         </Grid>
                         <Grid container direction="row">
                             <Grid item xs={6}>
-                                <img className={classes.logo} src={process.env.PUBLIC_URL + '/supporter/okn.png'} alt=""/>
-                                <img className={classes.logo} src={process.env.PUBLIC_URL + '/supporter/d4d.png'} alt=""/>
+                                <img className={classes.logo} src={process.env.PUBLIC_URL + '/supporter/okn.png'} alt="" />
+                                <img className={classes.logo} src={process.env.PUBLIC_URL + '/supporter/d4d.png'} alt="" />
 
                             </Grid>
 
                             <Grid item xs={6}>
-                                <img className={classes.logo} src={process.env.PUBLIC_URL + '/supporter/tsa.png'} alt=""/>
-                                <img className={classes.logo} src={process.env.PUBLIC_URL + '/supporter/UKAID.png'} alt=""/>
-                                <img className={classes.logo} src={process.env.PUBLIC_URL + '/supporter/di.png'} alt=""/>
+                                <img className={classes.logo} src={process.env.PUBLIC_URL + '/supporter/tsa.png'} alt="" />
+                                <img className={classes.logo} src={process.env.PUBLIC_URL + '/supporter/UKAID.png'} alt="" />
+                                <img className={classes.logo} src={process.env.PUBLIC_URL + '/supporter/di.png'} alt="" />
                             </Grid>
                         </Grid>
                     </Grid>
