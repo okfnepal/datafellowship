@@ -1,13 +1,13 @@
 {
-  "main.css": "/datafellowship/static/css/main.787a06f4.chunk.css",
-  "main.js": "/datafellowship/static/js/main.1bfc2d5a.chunk.js",
-  "main.js.map": "/datafellowship/static/js/main.1bfc2d5a.chunk.js.map",
-  "static/js/1.e49ae6d4.chunk.js": "/datafellowship/static/js/1.e49ae6d4.chunk.js",
-  "static/js/1.e49ae6d4.chunk.js.map": "/datafellowship/static/js/1.e49ae6d4.chunk.js.map",
-  "runtime~main.js": "/datafellowship/static/js/runtime~main.f1b3d037.js",
-  "runtime~main.js.map": "/datafellowship/static/js/runtime~main.f1b3d037.js.map",
-  "static/css/main.787a06f4.chunk.css.map": "/datafellowship/static/css/main.787a06f4.chunk.css.map",
-  "index.html": "/datafellowship/index.html",
-  "precache-manifest.6131fcf87d20a4d947edfac6005e745c.js": "/datafellowship/precache-manifest.6131fcf87d20a4d947edfac6005e745c.js",
-  "service-worker.js": "/datafellowship/service-worker.js"
+  "main.css": "/static/css/main.787a06f4.chunk.css",
+  "main.js": "/static/js/main.64ca56f3.chunk.js",
+  "main.js.map": "/static/js/main.64ca56f3.chunk.js.map",
+  "static/js/1.15c39df1.chunk.js": "/static/js/1.15c39df1.chunk.js",
+  "static/js/1.15c39df1.chunk.js.map": "/static/js/1.15c39df1.chunk.js.map",
+  "runtime~main.js": "/static/js/runtime~main.229c360f.js",
+  "runtime~main.js.map": "/static/js/runtime~main.229c360f.js.map",
+  "static/css/main.787a06f4.chunk.css.map": "/static/css/main.787a06f4.chunk.css.map",
+  "index.html": "/index.html",
+  "precache-manifest.a83e7383f1a3dc2264851ab5af9e16f9.js": "/precache-manifest.a83e7383f1a3dc2264851ab5af9e16f9.js",
+  "service-worker.js": "/service-worker.js"
 }
