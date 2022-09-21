@@ -1,5 +1,5 @@
 const navigationMenu = {
-    nav: [{ title: "Home", path: '' }, { title: "About", path: "about" }, { title: "Open Data Fellowship", path: "old" }],
+    nav: [{ title: "Home", path: '/' }, { title: "About", path: "/about" }, { title: "Open Data Fellowship", path: "/old" }],
 };
 
 const aboutFellowship =
@@ -318,6 +318,10 @@ const timelineData = [
     },
 ]
 
+const heroContent = {
+    description: "The main motive behind the fellowship is to assist municipal bodies in getting the data digitized and better used for decision-making. The fellowships offer the opportunity to work closely with various personnel in municipalities and other stakeholders. During the time of fellowship, the fellow will go through a series of training to sharpen their data skills and be placed at assigned municipalities to administer and operationalize Integrated Data Management System (IDMS). The application will be open until 15th October 2022, 12 PM NPT."
+}
+
 export {
     navigationMenu,
     whyShouldIJoin,
@@ -331,5 +335,6 @@ export {
     keyResponsibilities,
     benifits,
     aboutDataFellowship,
-    timelineData
+    timelineData,
+    heroContent
 };

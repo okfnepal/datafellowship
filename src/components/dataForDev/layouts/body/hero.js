@@ -3,6 +3,7 @@ import Grid from '@material-ui/core/Grid'
 import { withStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 import { Link } from 'react-router-dom';
+import { heroContent } from '../../data';
 
 const styles = (theme) => ({
     hero: {
@@ -45,12 +46,13 @@ const styles = (theme) => ({
         marginTop: '10%'
     },
     h1: {
-        fontSize: '40px',
+        fontSize: '42px',
         color: '#fff',
         fontWeight: '900',
         lineHeight: '70px',
         wordSpacing: '4px',
-        margin: '0'
+        margin: '0',
+        marginBottom: '10px',
 
 
     },
@@ -61,9 +63,10 @@ const styles = (theme) => ({
     },
     paragraph: {
         fontSize: '1.4rem',
-        fontWeight: '500',
+        fontWeight: '400',
         wordSpacing: '4px',
-        margin: '0'
+        margin: '0',
+        marginBottom: '10px',
 
     },
     span: {
@@ -162,7 +165,7 @@ class Hero extends Component {
                                 <h1 className={classes.h1}>
                                     <span className={classes.span}>DATA FOR DEVELOPMENT </span> FELLOWSHIP</h1>
                                 {/* <h2 className={classes.h2}> WOMEN EDITON</h2> */}
-                                <p className={classes.paragraph} style={{ marginRight: '3%' }}> The main motive behind the fellowship is to assist municipal bodies in getting the data digitized and better used for decision-making. The fellowships offer the opportunity to work closely with various personnel in municipalities and other stakeholders. During the time of fellowship, the fellow will go through a series of training to sharpen their data skills and be placed at assigned municipalities to administer and operationalize Integrated Data Management System (IDMS). The application will be open until 15th October 2022, 12 PM NPT.</p>
+                                <p className={classes.paragraph} style={{ marginRight: '3%' }}>{heroContent.description}</p>
                                 {/* <p className={classes.paragraph} style={{ marginRight: '5%', marginTop: '20px', fontSize: '18px' }}> <span style={{ textDecoration: 'underline', marginRight: '2px', color: '#00D2FF' }}>Learn More,</span> about application, eligibility and benifits.</p> */}
                                 <Button variant="outlined" className={classes.button} onClick={this.apply}>
                                     Apply

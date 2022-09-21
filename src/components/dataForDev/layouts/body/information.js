@@ -94,6 +94,9 @@ const Styles = (theme) => ({
         borderRadius: "1%",
         boxShadow: "1px 1px #E6E6E6"
     },
+    flex: {
+        display: 'flex',
+    },
 
     [theme.breakpoints.down('sm')]: {
         municipalityCard: {
@@ -156,10 +159,10 @@ class About extends Component {
                                         {projectMunicipality.map((item, key) => {
                                             return (
                                                 <div className={classes.flexContainer}>
-                                                    <img style={{ width: '60px' }} src={process.env.PUBLIC_URL + './information/gov.png'} alt="" />
+                                                    <img style={{ width: '60px' }} src={process.env.PUBLIC_URL + '/information/gov.png'} alt="" />
                                                     <div>
                                                         <h2 className={classes.flextext}>{item.LocalGovernment}</h2>
-                                                        <div style={{ display: 'flex' }}>
+                                                        <div className={classes.flex}>
                                                             <p className={classes.flextextbody}>{item.District}</p>
                                                             <p className={classes.flextextbody}>{item.Province}</p>
                                                         </div>

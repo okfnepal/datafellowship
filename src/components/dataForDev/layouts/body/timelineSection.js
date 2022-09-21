@@ -49,7 +49,7 @@ const Styles = (theme) => ({
 });
 
 
-class Faq extends Component {
+class Timeline extends Component {
     render() {
         const { classes } = this.props
         return (
@@ -58,7 +58,6 @@ class Faq extends Component {
                     <div className={classes.background}>
                         <Grid container spacing={32} className={classes.container}>
                             <Grid item xs={12} md={6} className={classes.gridItem} style={{ width: '60%' }}>
-                                {/* <img className={classes.image} src={process.env.PUBLIC_URL + '/lady.png'} alt="" /> */}
                                 <h4 className={classes.sectionTitle} variant="h4" gutterBottom> Application Timeline</h4>
                                 <div className="timeline-container">
                                     {timelineData.map((data, idx) => (
@@ -67,8 +66,7 @@ class Faq extends Component {
                                 </div>
                             </Grid>
                             <Grid item xs={12} md={4} className={classes.gridItem} style={{ width: '40%' }}>
-                                <img className={classes.image} style={{ width: '200px', marginTop: '8%' }} src={process.env.PUBLIC_URL + './information/letter1.png'} alt="" />
-                                {/* <h4 className={classes.sectionTitle} style={{ marginTop: '40%', textAlign: 'left' }} variant="h4" gutterBottom> Contact</h4> */}
+                                <img className={classes.image} style={{ width: '200px', marginTop: '8%' }} src={process.env.PUBLIC_URL + '/information/letter.png'} alt="" />
                                 <p className={classes.body} variant="body1" gutterBottom>For questions and queries, please contact: <span style={{ textDecoration: 'underline', color: '#6B6DEE' }}>info@oknp.org</span>
                                 </p>
                             </Grid>
@@ -81,4 +79,4 @@ class Faq extends Component {
     }
 }
 
-export default withStyles(Styles)(Faq)
+export default withStyles(Styles)(Timeline)
