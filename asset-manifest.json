@@ -1,13 +1,13 @@
 {
   "main.css": "/datafellowship/static/css/main.787a06f4.chunk.css",
-  "main.js": "/datafellowship/static/js/main.1bfc2d5a.chunk.js",
-  "main.js.map": "/datafellowship/static/js/main.1bfc2d5a.chunk.js.map",
-  "static/js/1.e49ae6d4.chunk.js": "/datafellowship/static/js/1.e49ae6d4.chunk.js",
-  "static/js/1.e49ae6d4.chunk.js.map": "/datafellowship/static/js/1.e49ae6d4.chunk.js.map",
+  "main.js": "/datafellowship/static/js/main.c2e207a2.chunk.js",
+  "main.js.map": "/datafellowship/static/js/main.c2e207a2.chunk.js.map",
+  "static/js/1.15c39df1.chunk.js": "/datafellowship/static/js/1.15c39df1.chunk.js",
+  "static/js/1.15c39df1.chunk.js.map": "/datafellowship/static/js/1.15c39df1.chunk.js.map",
   "runtime~main.js": "/datafellowship/static/js/runtime~main.f1b3d037.js",
   "runtime~main.js.map": "/datafellowship/static/js/runtime~main.f1b3d037.js.map",
   "static/css/main.787a06f4.chunk.css.map": "/datafellowship/static/css/main.787a06f4.chunk.css.map",
   "index.html": "/datafellowship/index.html",
-  "precache-manifest.d9c130134591a5a4a21b692809aebc46.js": "/datafellowship/precache-manifest.d9c130134591a5a4a21b692809aebc46.js",
+  "precache-manifest.ccebb2072cbc126ab504678f8ed9e299.js": "/datafellowship/precache-manifest.ccebb2072cbc126ab504678f8ed9e299.js",
   "service-worker.js": "/datafellowship/service-worker.js"
 }

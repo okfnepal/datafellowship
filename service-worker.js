@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/datafellowship/precache-manifest.d9c130134591a5a4a21b692809aebc46.js"
+  "/datafellowship/precache-manifest.ccebb2072cbc126ab504678f8ed9e299.js"
 );
 
 workbox.clientsClaim();
