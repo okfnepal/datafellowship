@@ -16,7 +16,7 @@ self.__precacheManifest = [
     "url": "/datafellowship/static/js/runtime~main.f1b3d037.js"
   },
   {
-    "revision": "650f65b666c22f2222bf6b2548aa2f70",
+    "revision": "2810248700835332f9dbffdb52c33a0b",
     "url": "/datafellowship/index.html"
   }
 ];
