@@ -125,7 +125,7 @@ class About extends Component {
                             <div style={{ margin: 'auto' }}>
                                 <div style={{ margin: 'auto' }}>
 
-                                    <img style={{ width: '25%', marginLeft: '35%' }} src={process.env.PUBLIC_URL + './information/checks.png'} alt="" />
+                                    <img style={{ width: '25%', marginLeft: '35%' }} src={process.env.PUBLIC_URL + '/information/checks.png'} alt="" />
                                 </div>
                                 <div style={{ display: 'flex', }}>
                                     <div style={{}}>
@@ -143,11 +143,11 @@ class About extends Component {
                                     </div>
                                     <div style={{ marginTop: '2%', width: '45%', }}>
 
-                                        <img style={{ width: '100%', marginBottom: '0', }} src={process.env.PUBLIC_URL + './information/boy.png'} alt="" />
+                                        <img style={{ width: '100%', marginBottom: '0', }} src={process.env.PUBLIC_URL + '/information/boy.png'} alt="" />
                                     </div>
                                 </div>
                                 <div>
-                                    <img style={{ width: '110%' }} src={process.env.PUBLIC_URL + './information/rect.png'} alt="" />
+                                    <img style={{ width: '110%' }} src={process.env.PUBLIC_URL + '/information/rect.png'} alt="" />
                                 </div>
                             </div>
                         </Grid>

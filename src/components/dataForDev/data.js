@@ -160,7 +160,7 @@ const applicationSummary = {
     items: [
         { title: "Personal information", summary: "Including Personal Identification Documentation.", imageUrl: "/information/information3.png" },
         { title: "Motivation Section", summary: "What you expect to learn and yout motivation for this fellowship.", imageUrl: "/information/motivation1.png" },
-        { title: "CV/Resume(in pdf CV no longer than 2 pages)", summary: "in pdf CV no longer than 2 pages", imageUrl: "/information/resume.png" },
+        { title: "CV/Resume(in pdf CV no longer than 2 pages)", summary: "in pdf CV no longer than 2 pages", imageUrl: "/information/cv.png" },
     ],
 };
 
