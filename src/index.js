@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Route, Switch, HashRouter } from 'react-router-dom'
+import { Route, Switch, BrowserRouter } from 'react-router-dom'
 import './index.css';
 import App from './components/app';
 import AboutUs from './components/new';
@@ -8,13 +8,13 @@ import Fellowship from './components/about';
 import * as serviceWorker from './serviceWorker';
 
 const routs = (
-    < HashRouter >
+    < BrowserRouter >
         <Switch>
             <Route exact path="/" component={AboutUs} />
             <Route path="/old" component={App} />
             <Route path="/about" component={Fellowship} />
         </Switch>
-    </ HashRouter >
+    </ BrowserRouter >
 );
 
 ReactDOM.render(routs, document.getElementById('root'));
