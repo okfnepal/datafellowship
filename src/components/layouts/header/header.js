@@ -1,10 +1,10 @@
-import React, {Component, Fragment} from 'react'
+import React, { Component, Fragment } from 'react'
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import IconButton from '@material-ui/core/IconButton';
 import Button from '@material-ui/core/Button';
-import {withStyles} from '@material-ui/core/styles';
+import { withStyles } from '@material-ui/core/styles';
 import MenuIcon from '@material-ui/icons/Menu';
 import Drawer from '@material-ui/core/Drawer';
 import Divider from '@material-ui/core/Divider';
@@ -12,9 +12,9 @@ import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 import './style.css';
-import {navigationMenu} from '../../data'
-import {  Element, scroller} from 'react-scroll'
-import { Redirect } from 'react-router-dom'
+import { navigationMenu } from '../../data'
+import { Element, scroller } from 'react-scroll'
+import { Link } from 'react-router-dom'
 
 
 const styles = (theme) => ({
@@ -109,12 +109,12 @@ class Headers extends Component {
     state = {
         open: false,
         scroll: 0,
-        navState :false
+        navState: false
     };
 
 
     scrollTo(elements) {
-        if (elements ==='Apply') {
+        if (elements === 'Apply') {
             return window.location.href = "https://docs.google.com/forms/d/1ki7U2WRPyWtvQAdnrqYZg9iC1LZsfHaivaVZEvC1tcA";
 
         }
@@ -122,16 +122,16 @@ class Headers extends Component {
             duration: 800,
             delay: 0,
             smooth: 'easeInOutQuart',
-            offset:-100,
+            offset: -100,
         })
     }
 
     handleDrawerOpen = () => {
         if (this.state.open === false) {
-            this.setState({open: true});
+            this.setState({ open: true });
 
         } else {
-            this.setState({open: false});
+            this.setState({ open: false });
         }
     };
 
@@ -147,27 +147,32 @@ class Headers extends Component {
 
 
     render() {
-        const {classes} = this.props;
+        const { classes } = this.props;
 
         return (
             <Fragment>
                 <Element name="Home" className="element">
                     <AppBar position="static" color='secondary' position="fixed"
-                            className={this.state.scroll >= 50 ? classes.headerSec : classes.header}>
+                        className={this.state.scroll >= 50 ? classes.headerSec : classes.header}>
                         <Toolbar className={classes.toolbar}>
-                            <Typography variant="h6" color="inherit" style={{flexGrow: 1}}>
-                                <img className={this.state.scroll >= 50 ? classes.logoSec : classes.logo}
-                                     src={process.env.PUBLIC_URL + '/oknp.svg'} alt=""/>
+                            <Typography variant="h6" color="inherit" style={{ flexGrow: 1 }}>
+                                <Link to='/'>
+                                    <img className={this.state.scroll >= 50 ? classes.logoSec : classes.logo}
+                                        src={process.env.PUBLIC_URL + '/oknp.svg'} alt="" />
+                                </Link>
                             </Typography>
                             <Typography className={`${classes.plainNavigation}`}>
                                 {navigationMenu.nav.map((navItem, index) => (
-                                    <Button key={index} color="inherit" className={classes.navButton+ ' '+'nav-button'}
-                                            onClick={() => this.scrollTo(navItem)}>{navItem}</Button>
+                                    <Button key={index} color="inherit" className={classes.navButton + ' ' + 'nav-button'}
+                                        onClick={() => this.scrollTo(navItem)}>
+                                        <Link key={index} color="inherit" className={classes.navButton + ' ' + 'nav-button'} style={{ textDecoration: 'none' }}
+                                            to={navItem.path}>{navItem.title}</Link>
+                                    </Button>
                                 ))}
                             </Typography>
                             <IconButton onClick={this.handleDrawerOpen} className={classes.menuButton} color="inherit"
-                                        aria-label="Menu">
-                                <MenuIcon/>
+                                aria-label="Menu">
+                                <MenuIcon />
                             </IconButton>
                         </Toolbar>
 
@@ -181,14 +186,17 @@ class Headers extends Component {
                 >
                     <div className={classes.drawerHeader}>
                         <IconButton onClick={this.handleDrawerOpen}>
-                            <MenuIcon/>
+                            <MenuIcon />
                         </IconButton>
                     </div>
-                    <Divider/>
-                    <List style={{width: "180px"}}>
+                    <Divider />
+                    <List style={{ width: "180px" }}>
                         {navigationMenu.nav.map((navItem, index) => (
-                            <ListItem button key={navItem}>
-                                <ListItemText primary={navItem}/>
+                            <ListItem button key={navItem.title}>
+                                <ListItemText >
+                                    <Link key={index} color="inherit" style={{ textDecoration: 'none', color: "#3F3D56" }}
+                                        to={navItem.path}>{navItem.title}</Link>
+                                </ListItemText >
                             </ListItem>
                         ))}
                     </List>

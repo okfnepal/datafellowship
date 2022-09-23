@@ -21,17 +21,21 @@ const Styles = (theme) => ({
     [theme.breakpoints.down('sm')]: {
         container: {
             display: 'flex',
-            flexDirection: 'column-reverse',
-            justifyContent: 'center',
-            alignContent: 'center',
-            textAlign: 'center'
+            flexDirection: 'column',
+            alignContent: 'left',
+            textAlign: 'left'
 
         },
+    },
+    [theme.breakpoints.down('sm')]: {
+        gridItem: {
+            width: '100%'
+        }
     },
     sectionTitle: {
         fontSize: '30px',
         fontWeight: '800',
-        color: '#2963B4',
+        color: '#3399CC',
         // color: '#2F2E41',
         textAlign: 'center',
         margin: '0',
@@ -39,17 +43,17 @@ const Styles = (theme) => ({
     sectionTitleLeft: {
         fontSize: '30px',
         fontWeight: '800',
-        color: '#2963B4',
+        color: '#3399CC',
         textAlign: 'left',
         margin: '0',
     },
     body: {
         fontSize: '16px',
-        fontWeight: '400'
+        fontWeight: '400',
     },
     gridItem: {
         marginBottom: '5%'
-    }
+    },
 
 
 });
@@ -112,7 +116,7 @@ class About extends Component {
                                 })}
                             </ol>
                         </Grid>
-                        <Grid item xs={12} md={4} className={classes.gridItem} style={{ width: '40%' }}>
+                        <Grid item xs={12} md={4} className={classes.gridItem} >
                             {/* <img className={classes.image} src={process.env.PUBLIC_URL + '/lady.png'} alt="" /> */}
                             <h4 className={classes.sectionTitleLeft} variant="h4" gutterBottom> Key Responsibilities</h4>
                             <p className={classes.body} variant="body1" gutterBottom>Fellows will be responsible for:
@@ -125,7 +129,7 @@ class About extends Component {
                                 })}
                             </ol>
                         </Grid>
-                        <Grid item xs={12} md={4} className={classes.gridItem} style={{ width: '40%' }}>
+                        <Grid item xs={12} md={4} className={classes.gridItem} >
                             {/* <img className={classes.image} src={process.env.PUBLIC_URL + '/lady.png'} alt="" /> */}
                             <h4 className={classes.sectionTitleLeft} variant="h4" gutterBottom> Benifits</h4>
                             <p className={classes.body} variant="body1" gutterBottom>Fellows will be responsible for:
@@ -138,7 +142,7 @@ class About extends Component {
                                 })}
                             </ol>
                         </Grid>
-                        <Grid item xs={12} md={4} className={classes.gridItem} style={{ width: '40%' }}>
+                        <Grid item xs={12} md={4} className={classes.gridItem} >
                             {/* <img className={classes.image} src={process.env.PUBLIC_URL + '/lady.png'} alt="" /> */}
                             <h4 className={classes.sectionTitleLeft} variant="h4" gutterBottom> Application Timeline</h4>
                             <p className={classes.body} variant="body1" gutterBottom>September 25, 2022 – Application opens
@@ -148,7 +152,7 @@ class About extends Component {
                             <p className={classes.body} variant="body1" gutterBottom>October 20, 2022 – Selected fellows will be informed
                             </p>
                         </Grid>
-                        <Grid item xs={12} md={8} className={classes.gridItem} style={{ width: '40%' }}>
+                        <Grid item xs={12} md={8} className={classes.gridItem} >
                             {/* <img className={classes.image} src={process.env.PUBLIC_URL + '/lady.png'} alt="" /> */}
                             <h4 className={classes.sectionTitleLeft} variant="h4" gutterBottom> Contact</h4>
                             <p className={classes.body} variant="body1" gutterBottom>For questions and queries, please contact: info@oknp.org

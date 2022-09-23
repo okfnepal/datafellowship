@@ -21,7 +21,7 @@ const styles = (theme) => ({
     link: {
         color: '#fff',
         textDecoration: 'none',
-        padding: '10px',
+        paddingRight: '10px',
     },
     icon: {
         color: '#fff'

@@ -1,6 +1,6 @@
 const navigationMenu = {
-    nav: ['Home', 'About', 'Join Why?', 'Host organization', 'Faq', 'Apply']
-};
+    nav: [{ title: "Home", path: '/' }, { title: "LG Data Fellowship", path: "/lgdatafellowship" }, { title: "Open Data Fellowship", path: "/womendatafellowship" }],
+}
 
 const aboutFellowship = '"Open Data Fellowship - Women Edition" is an initiative of Open Knowledge Nepal. The main motive behind the fellowship is to increase the number of women leaders in the field of open data in Nepal and use the existing expertise of different organizations to provide a good exposure to women and equip them with valuable work experience, confidence and skills that will help them to better understand the data ecosystem and potential opportunities. The fellowships offer the opportunity to connect with business groups, governments and individuals in the data community. \n' +
     'During the time of fellowship, the fellow will visit various host organizations for a half day in-house training which will be followed by the one-month placement in a respective organization. For the first edition, we will be selecting 10 women fellows. The application will be open until 10th March 2019, 12 PM NST.'
@@ -83,11 +83,8 @@ const hostLogos = [
         url: '/hosts/KLL.png',
         name: 'Kathmandu living Labs',
         order: 1
-    }, {
-        url: '/hosts/pathway.png',
-        name: 'Pathway Technologies',
-        order: 1
-    }, {
+    },
+    {
         url: '/hosts/younginnovation.png',
         name: 'Young Innovation',
         order: 1
@@ -96,6 +93,17 @@ const hostLogos = [
         name: 'Yuwa',
         order: 1
     },
+    {
+        url: '/hosts/iids.svg',
+        name: 'Institute for Integrated Development Studies',
+        order: 1
+    },
+    {
+        url: '/hosts/naksa.png',
+        name: 'Naxa',
+        order: 1
+    },
+
 
 ];
 

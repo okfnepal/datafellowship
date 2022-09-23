@@ -8,7 +8,7 @@ import { Element } from "react-scroll/modules";
 
 const Styles = (theme) => ({
     container: {
-        width: '86%',
+        width: '85%',
         margin: 'auto',
         margin: '5% auto',
     },
@@ -17,15 +17,9 @@ const Styles = (theme) => ({
         // maxWidth: ' calc(100% - 100px)',
         height: 'auto',
     },
-    [theme.breakpoints.down('sm')]: {
-        container: {
-            display: 'flex',
-            flexDirection: 'column-reverse',
-            justifyContent: 'center',
-            alignContent: 'center',
-            textAlign: 'center'
-
-        },
+    municipalityCard: {
+        margin: 'auto',
+        width: '100%',
     },
     sectionTitle: {
         fontSize: '26px',
@@ -57,7 +51,18 @@ const Styles = (theme) => ({
         // alignItems: 'center',
         // border: '2px solid red',
         margin: '8% auto',
-        alignItems: 'center'
+        alignItems: 'center',
+        textAlign: 'left'
+
+    },
+    flexContainerMunicipality: {
+        display: 'flex',
+        // alignItems: 'center',
+        // border: '2px solid red',
+        margin: '8% auto',
+        alignItems: 'center',
+        paddingBottom: '10px',
+        textAlign: 'left'
     },
     flextext: {
         marginLeft: '10px',
@@ -87,24 +92,64 @@ const Styles = (theme) => ({
         marginRight: "20px"
 
     },
-    municipalityCard: {
+    benifitSection: {
         margin: 'auto',
-        border: '2px solid #E6E6E6',
-        width: '70%',
-        borderRadius: "1%",
-        boxShadow: "1px 1px #E6E6E6"
+        width: '90%'
     },
+
     flex: {
         display: 'flex',
     },
+    boyImg: {
+        width: '90%',
+        margin: '0 auto',
+        marginTop: '20%'
+    },
+    checkImg: {
+        width: '25%', marginLeft: '35%'
+    },
+    summaryContainer: {
+        width: '95%',
+        margin: 'auto'
+    },
 
     [theme.breakpoints.down('sm')]: {
+        container: {
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'center',
+            alignContent: 'center',
+            textAlign: 'center'
+
+        },
         municipalityCard: {
             margin: 'auto',
-            border: '0px',
-            width: '100%',
+            border: '0',
+            boxShadow: "none",
+        },
+        sectionTitle: {
+            fontSize: '22px',
+        },
+        checkImg: {
+            width: '25%', marginLeft: '0'
+        },
+        benifitSection: {
+            width: '100%'
+        },
+        boyImg: {
+            display: 'none'
+        },
+        summaryContainer: {
+            width: '80%',
+            margin: 'auto'
         },
 
+
+    },
+    [theme.breakpoints.down('xs')]: {
+        boyImg: {
+            display: 'none'
+        },
     }
 
 
@@ -119,47 +164,45 @@ class About extends Component {
                     <Grid className={classes.container} spacing={10} container
                         direction="row"
                         justify="space-between"
-                        alignItems="flex-start" >
-                        <Grid item xs={12} md={5} className={classes.gridItem}>
+                        alignItems="start" >
+                        <Grid item xs={12} md={4} className={classes.gridItem} >
                             <h2 className={classes.sectionTitle} variant="h4" gutterBottom style={{ marginBottom: '5%' }}> Application Summary</h2>
                             <div style={{ margin: 'auto' }}>
                                 <div style={{ margin: 'auto' }}>
-
-                                    <img style={{ width: '25%', marginLeft: '35%' }} src={process.env.PUBLIC_URL + '/information/checks.png'} alt="" />
+                                    <img className={classes.checkImg} src={process.env.PUBLIC_URL + '/information/checks.png'} alt="" />
                                 </div>
-                                <div style={{ display: 'flex', }}>
-                                    <div style={{}}>
-                                        {applicationSummary.items.map((item, data) => {
-                                            return (
-                                                <div className={classes.flexContainer}>
-                                                    <img style={{ width: '80px' }} src={process.env.PUBLIC_URL + `${item.imageUrl}`} alt="" />
-                                                    <div>
-                                                        <h2 className={classes.flextext}>{item.title}</h2>
-                                                        <p className={classes.flextextbody}>{item.summary}</p>
-                                                    </div>
+                                <div className={classes.summaryContainer} style={{}}>
+                                    {applicationSummary.items.map((item, data) => {
+                                        return (
+                                            <div className={classes.flexContainer}>
+                                                <img style={{ width: '80px' }} src={process.env.PUBLIC_URL + `${item.imageUrl}`} alt="" />
+                                                <div>
+                                                    <h2 className={classes.flextext}>{item.title}</h2>
+                                                    <p className={classes.flextextbody}>{item.summary}</p>
                                                 </div>
-                                            )
-                                        })}
-                                    </div>
-                                    <div style={{ marginTop: '2%', width: '45%', }}>
-
-                                        <img style={{ width: '100%', marginBottom: '0', }} src={process.env.PUBLIC_URL + '/information/boy.png'} alt="" />
-                                    </div>
-                                </div>
-                                <div>
-                                    <img style={{ width: '110%' }} src={process.env.PUBLIC_URL + '/information/rect.png'} alt="" />
+                                            </div>
+                                        )
+                                    })}
                                 </div>
                             </div>
                         </Grid>
-                        <Grid item xs={12} md={5} className={classes.gridItem}>
-                            <div className={classes.municipalityCard} style={{ margin: 'auto', border: '2px solid #E6E6E6', width: '70%' }}>
-                                <h2 className={classes.sectionTitle} variant="h4" gutterBottom style={{ marginTop: '10%' }}> Project Municipalities</h2>
+                        <Grid item md={4} alignContent='center'>
+                            <div className={classes.boyImg}>
+                                <img style={{ width: '80%', margin: '0 ', }} src={process.env.PUBLIC_URL + '/information/boy.png'} alt="" />
+                            </div>
+                        </Grid>
+                        <Grid item xs={12} md={4} style={{ width: '100%' }} className={classes.gridItem}>
+                            <h2 className={classes.sectionTitle} variant="h4" gutterBottom style={{ marginBottom: '5%' }}> Project Municipalities</h2>
+                            <div className={classes.municipalityCard}>
+                                <div style={{ margin: 'auto' }}>
+                                    <img className={classes.checkImg} src={process.env.PUBLIC_URL + '/information/checks.png'} alt="" />
+                                </div>
                                 <div style={{ display: 'flex', justifyContent: 'center' }}>
                                     <div style={{}}>
                                         {projectMunicipality.map((item, key) => {
                                             return (
-                                                <div className={classes.flexContainer}>
-                                                    <img style={{ width: '60px' }} src={process.env.PUBLIC_URL + '/information/gov.png'} alt="" />
+                                                <div className={classes.flexContainerMunicipality}>
+                                                    <img style={{ width: '90px' }} src={process.env.PUBLIC_URL + '/information/gov.png'} alt="" />
                                                     <div>
                                                         <h2 className={classes.flextext}>{item.LocalGovernment}</h2>
                                                         <div className={classes.flex}>
@@ -175,17 +218,22 @@ class About extends Component {
                                 </div>
                             </div>
                         </Grid>
+                        <Grid item xs={12} className={classes.gridItem}>
+                            <img style={{ width: '100%', height: '3px' }} src={process.env.PUBLIC_URL + '/information/rect.png'} alt="" />
+                        </Grid>
                         <Grid item xs={12} md={12}>
-                            <h2 className={classes.sectionTitle} variant="h4" gutterBottom style={{ marginBottom: '5%' }}>Benifits</h2>
-                            <div style={{ margin: 'auto', width: '60%' }}>
+                            <h2 className={classes.sectionTitle} variant="h4" gutterBottom >Benifits</h2>
+                            <div className={classes.benifitSection}>
                                 <Grid container direction='row' style={{ justifyContent: 'center' }}>
                                     {benifits.items.map((data, key) => {
                                         return (
-                                            <Grid item xs={12} md={4} >
+                                            <Grid item xs={6} md={4} >
                                                 <div className={classes.benifitText}>
-                                                    {/* <div> */}
-                                                    <img style={{ width: '80px' }} src={process.env.PUBLIC_URL + `${data.imageUrl}`} alt="" />
-                                                    {/* </div> */}
+                                                    <div style={{ height: '200px', display: 'flex', alignItems: 'end', justifyContent: 'center' }}>
+                                                        <div>
+                                                            <img style={{ width: '200px' }} src={process.env.PUBLIC_URL + `${data.imageUrl}`} alt="" />
+                                                        </div>
+                                                    </div>
                                                     <div>
                                                         <h2 className={classes.flextext}>{data.title}</h2>
                                                         <p className={classes.flextextbody} style={{ margin: 'auto' }}>{data.summary}</p>
@@ -198,7 +246,6 @@ class About extends Component {
                             </div>
 
                         </Grid>
-
                     </Grid>
                 </Element>
             </Fragment >

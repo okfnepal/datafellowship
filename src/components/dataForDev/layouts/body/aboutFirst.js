@@ -9,13 +9,15 @@ import { Element } from "react-scroll/modules";
 const Styles = (theme) => ({
     container: {
         width: '85%',
-        margin: '10% auto',
+        margin: '5% auto',
 
     },
     image: {
-        width: '100%',
-        maxWidth: ' calc(100% - 100px)',
-        height: 'auto',
+        width: '450px',
+        // maxWidth: ' calc(100% - 100px)',
+        // height: 'auto',
+        float: 'right',
+        display: 'inline-block'
     },
     [theme.breakpoints.down('sm')]: {
         container: {
@@ -23,14 +25,14 @@ const Styles = (theme) => ({
             flexDirection: 'column-reverse',
             justifyContent: 'center',
             alignContent: 'center',
-            textAlign: 'center'
+            textAlign: 'left'
 
         },
     },
     sectionTitle: {
         fontSize: '30px',
         fontWeight: '800',
-        color: '#2963B4',
+        color: '#3399CC',
     },
     body: {
         fontSize: '16px',
@@ -51,16 +53,19 @@ class About extends Component {
                         direction="row"
                         justify="space-between"
                         alignItems="center">
-                        <Grid item xs={12} md={6}>
-                            <h4 className={classes.sectionTitle} variant="h4" gutterBottom> DataDev
-                                Fellowship</h4>
+                        <Grid item xs={12} md={12}>
+                            <h4 className={classes.sectionTitle} variant="h4" gutterBottom>
+                                About LG Data Fellowship</h4>
+                            {/* <img className={classes.image} src={process.env.PUBLIC_URL + '/about.svg'} alt="" /> */}
                             <p className={classes.body} variant="body1" gutterBottom>{aboutDataFellowship.p1}</p>
                             <p className={classes.body} variant="body1" gutterBottom>{aboutDataFellowship.p2}</p>
                             <p className={classes.body} variant="body1" gutterBottom>{aboutDataFellowship.p3}</p>
                             <p className={classes.body} variant="body1" gutterBottom>{aboutDataFellowship.p4}</p>
-                        </Grid>
-                        <Grid item xs={12} md={5} style={{ marginTop: '2%' }}>
-                            <img className={classes.image} src={process.env.PUBLIC_URL + '/about.svg'} alt="" />
+                            <p className={classes.body} variant="body1" gutterBottom>To apply for the fellowship, please complete the <a
+                                href='https://docs.google.com/forms/d/e/1FAIpQLSfWGEh5M9HtvhmZF-MFmtjtcOqQRy_h6dMjJ-aR30TkFuvdIw/viewform'
+                                style={{ color: 'black' }}
+                                target='_blank'>online application form.</a></p>
+
                         </Grid>
                     </Grid>
                 </Element>

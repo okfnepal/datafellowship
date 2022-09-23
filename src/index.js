@@ -11,8 +11,8 @@ const routs = (
     < BrowserRouter >
         <Switch>
             <Route exact path="/" component={AboutUs} />
-            <Route path="/old" component={App} />
-            <Route path="/about" component={Fellowship} />
+            <Route path="/womendatafellowship" component={App} />
+            <Route path="/lgdatafellowship" component={Fellowship} />
         </Switch>
     </ BrowserRouter >
 );

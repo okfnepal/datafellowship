@@ -14,22 +14,23 @@ import { timelineData } from '../../data'
 const Styles = (theme) => ({
     background: {
         background: '#F4F5F8',
+        position: 'relative',
 
     },
     container: {
-        width: '85%',
+        width: '67%',
         margin: '0 auto',
         textAlign: 'left',
-        paddingBottom: '30px',
-
+        justifyContent: 'center',
 
     },
     sectionTitle: {
         fontSize: '26px',
-        fontWeight: '600',
+        fontWeight: '800',
         color: '#3399CC',
         textAlign: 'center',
-        padding: '0px 0',
+        margin: '0',
+        padding: '50px 0',
     },
     title: {
         color: '#2F2E41',
@@ -40,10 +41,77 @@ const Styles = (theme) => ({
     body: {
         color: '#2F2E41',
         fontSize: '16px',
+        width: '50%',
+        margin: '40px auto',
+        padding: '2% 0',
+        textAlign: 'center'
 
     },
     gridItem: {
-        // textAlign: 'center'
+        margin: 'auto',
+
+    },
+    timeCard: {
+        margin: '0 auto',
+        boxShadow: '0 0 5px rgba(0, 0, 0, 0.3)',
+        borderRadius: '5px',
+        background: '#fff'
+    },
+    timeCardDetail: {
+        fontSize: '16px',
+        maxWidth: '300px',
+        paddingBottom: '20px',
+        lineHeight: '1px',
+        textAlign: 'center',
+        fontWeight: 'bold',
+        color: '#2F2E41'
+    },
+    tag: {
+        color: '#fff',
+        fontSize: '12px',
+        fontWeight: 'bold',
+        top: '5px',
+        left: '5px',
+        letterSpacing: '1px',
+        padding: '5px',
+        textTransform: 'uppercase',
+        display: 'inline-block',
+        margin: '20px 0 10px 0'
+    },
+    time: {
+        color: '#777',
+        fontSize: '14px',
+        fontWeight: 'bold',
+        padding: '10px'
+    },
+    innerTimeDiv: {
+        display: 'flex',
+        justifyContent: 'space-between'
+    },
+    [theme.breakpoints.down('md')]: {
+        body: {
+            color: '#2F2E41',
+            fontSize: '16px',
+            width: '100%',
+            margin: '34px auto'
+        },
+        timeCardDetail: {
+            fontSize: '16px',
+            maxWidth: '300px',
+            paddingBottom: '16px',
+            lineHeight: '16px',
+            textAlign: 'center',
+            fontWeight: 'bold',
+            color: '#2F2E41'
+        },
+        container: {
+            width: '90%',
+            margin: '0 auto',
+            textAlign: 'left',
+            justifyContent: 'center',
+
+        },
+
     }
 
 });
@@ -54,19 +122,37 @@ class Timeline extends Component {
         const { classes } = this.props
         return (
             <Fragment>
-                <Element name="Faq" className="element">
+                <Element name="Timeline" className="element">
                     <div className={classes.background}>
-                        <Grid container spacing={32} className={classes.container}>
-                            <Grid item xs={12} md={6} className={classes.gridItem} style={{ width: '60%' }}>
-                                <h4 className={classes.sectionTitle} variant="h4" gutterBottom> Application Timeline</h4>
-                                <div className="timeline-container">
-                                    {timelineData.map((data, idx) => (
-                                        <TimelineItem data={data} key={idx} />
-                                    ))}
-                                </div>
+                        <h4 className={classes.sectionTitle} variant="h4" gutterBottom>Application Timeline</h4>
+                        <Grid container className={classes.container} direction='row'>
+                            {timelineData.map((data, id) => (
+                                <>
+                                    {id === 0
+                                        ? <></>
+                                        :
+                                        <Grid item xs={1} className={classes.gridItem}>
+                                            <img style={{ width: '100%', height: '3px' }} src={process.env.PUBLIC_URL + '/information/rect.png'} alt="" />
+                                        </Grid>
+                                    }
+
+                                    <Grid item xs={12} sm={3} className={classes.timeCard}>
+                                        <div style={{ margin: '0 auto', width: '100%', }}>
+                                            <div class={classes.innerTimeDiv}>
+                                                <span className={classes.tag} style={{ backgroundColor: data.category.color }}>
+                                                    {data.category.tag}
+                                                </span>
+                                                <time className={classes.time}>{data.date}</time>
+                                            </div>
+                                            <p className={classes.timeCardDetail} >{data.text}</p>
+                                        </div>
+                                    </Grid>
+
+                                </>
+                            ))}
+                            <Grid item xs={1} >
                             </Grid>
-                            <Grid item xs={12} md={4} className={classes.gridItem} style={{ width: '40%' }}>
-                                <img className={classes.image} style={{ width: '200px', marginTop: '8%' }} src={process.env.PUBLIC_URL + '/information/letter.png'} alt="" />
+                            <Grid item xs={12} className={classes.gridItem} >
                                 <p className={classes.body} variant="body1" gutterBottom>For questions and queries, please contact: <span style={{ textDecoration: 'underline', color: '#6B6DEE' }}>info@oknp.org</span>
                                 </p>
                             </Grid>
@@ -74,7 +160,7 @@ class Timeline extends Component {
                     </div>
                 </Element>
 
-            </Fragment>
+            </Fragment >
         )
     }
 }

@@ -7,7 +7,7 @@ import { heroContent } from '../../data';
 
 const styles = (theme) => ({
     hero: {
-        background: `url(${process.env.PUBLIC_URL}/meeting1.jpg)`,
+        background: `url(${process.env.PUBLIC_URL}/fellowsbg.jpg)`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         textAlign: 'left',
@@ -24,7 +24,7 @@ const styles = (theme) => ({
     },
     overlay: {
         backgroundImage: 'linear-gradient(to right,#1b3e77, #1EA2CC)',
-        opacity: '0.8',
+        opacity: '0.9',
         position: 'absolute',
         top: '0px',
         width: '100%',
@@ -43,30 +43,34 @@ const styles = (theme) => ({
         width: '100%',
         // border: '2px solid green',
         // margin: 'auto',
-        marginTop: '10%'
+        marginTop: '14%',
+        // textAlign: 'center'
+    },
+    heroText: {
+        // margin: 'auto'
     },
     h1: {
-        fontSize: '42px',
+        fontSize: '3.052rem',
         color: '#fff',
         fontWeight: '900',
         lineHeight: '70px',
         wordSpacing: '4px',
-        margin: '0',
-        marginBottom: '10px',
+        marginBottom: '12px',
 
 
     },
     h2: {
-        fontSize: '40px',
+        fontSize: '1rem',
         fontWeight: '200',
         margin: '20px 0'
     },
     paragraph: {
-        fontSize: '1.4rem',
+        fontSize: '1.29rem',
         fontWeight: '400',
         wordSpacing: '4px',
         margin: '0',
-        marginBottom: '10px',
+        marginBottom: '14px',
+        // maxWidth: '1020px'
 
     },
     span: {
@@ -78,9 +82,8 @@ const styles = (theme) => ({
         fontSize: '18px',
         fontWeight: '700',
         height: '45px',
-        width: '135px',
+        width: '150px',
         backgroundColor: '#00D2FF',
-        // borderRadius: '23px',
         color: '#fff',
         border: 'none',
         textTransform: 'capitalize',
@@ -96,7 +99,7 @@ const styles = (theme) => ({
         fontSize: '18px',
         fontWeight: '700',
         height: '45px',
-        width: '135px',
+        width: '150px',
         // backgroundColor: '#00D2FF',
         // borderRadius: '23px',
         color: '#fff',
@@ -109,24 +112,31 @@ const styles = (theme) => ({
         }
     },
     logo: {
-        padding: '0 2%',
+        padding: '0 4%',
 
     },
     heroimg: {
         height: '200px',
 
     },
+    supportedBy: {
+        display: 'flex',
+        alignItems: 'center',
+        width: '80%',
+        justifyContent: 'space-between'
+    },
 
     [theme.breakpoints.down('sm')]: {
         content: {
-            width: '90%'
+            width: '100%',
+            marginTop: '20%'
         },
         h1: {
-            fontSize: '35px',
+            fontSize: '30px',
             color: '#fff',
-            fontWeight: '400',
-            lineHeight: '70px',
-            margin: 0,
+            fontWeight: '900',
+            lineHeight: '50px',
+            marginTop: '20%',
 
 
         },
@@ -139,16 +149,53 @@ const styles = (theme) => ({
             fontSize: '1.1625rem',
 
         },
+        hero: {
+            height: '100%'
+        },
+        heroText: {
+            margin: 'auto'
+        },
+        logo: {
+            padding: '0 4%',
+            width: '80%'
+
+        },
+        supportedBy: {
+            // display: 'flex',
+            marginBottom: '4%',
+        },
 
     },
 
+
+    //responsiveness
+    [theme.breakpoints.down('xs')]: {
+        button: {
+            width: '220px',
+            // marginLeft: '20%'
+        },
+        learnmore_button: {
+            width: '220px',
+            marginLeft: '0'
+        },
+        logo: {
+            padding: '5%',
+            border: '2x solid red'
+        },
+        supportedBy: {
+            // display: 'flex',
+            width: '90%',
+            marginBottom: '4%',
+        },
+    }
 
 });
 
 
 class Hero extends Component {
     apply() {
-        return window.location.href = "https://docs.google.com/forms/d/1ki7U2WRPyWtvQAdnrqYZg9iC1LZsfHaivaVZEvC1tcA";
+        // return window.location.href = "https://forms.gle/4iKvbyntL5bURo468";
+        window.open('https://forms.gle/4iKvbyntL5bURo468', '_blank')
     }
 
 
@@ -160,40 +207,39 @@ class Hero extends Component {
                     <div className={classes.overlay}></div>
                     <Grid className={classes.contentWapper} container direction="row" justify="left"
                         alignItems="center">
-                        <Grid className={classes.content} container direction='row' spacing={4}>
-                            <Grid item xs={8}>
+                        <Grid className={classes.content} container direction='row' spacing={4} justifyContent='center'>
+                            <Grid item xs={12} lg={10} className={classes.heroText}>
                                 <h1 className={classes.h1}>
-                                    <span className={classes.span}>DATA FOR DEVELOPMENT </span> FELLOWSHIP</h1>
+                                    <span className={classes.span}>LOCAL GOVERNMENT (LG) DATA </span> FELLOWSHIP</h1>
                                 {/* <h2 className={classes.h2}> WOMEN EDITON</h2> */}
                                 <p className={classes.paragraph} style={{ marginRight: '3%' }}>{heroContent.description}</p>
                                 {/* <p className={classes.paragraph} style={{ marginRight: '5%', marginTop: '20px', fontSize: '18px' }}> <span style={{ textDecoration: 'underline', marginRight: '2px', color: '#00D2FF' }}>Learn More,</span> about application, eligibility and benifits.</p> */}
                                 <Button variant="outlined" className={classes.button} onClick={this.apply}>
                                     Apply
                                 </Button>
-                                <Link to='/about' style={{ color: '#fff', textDecoration: 'none' }}>
-                                    <Button variant="outlined" className={classes.learnmore_button}>
+                                <Button variant="outlined" className={classes.learnmore_button}>
+                                    <Link to='/lgdatafellowship' style={{ color: '#fff', textDecoration: 'none', }}>
                                         Learn More
-                                    </Button>
-                                </Link>
+                                    </Link>
+                                </Button>
                             </Grid>
                         </Grid>
-                        <Grid container direction="row" style={{ marginTop: '1%', marginLeft: '1%', width: '80%' }}>
-                            <Grid item xs={6}>
-                                <h3>Initiative of:</h3>
-                            </Grid>
+                        <Grid container direction="row">
+                            <Grid item xs={12} md={6} style={{ width: '30%' }}>
+                                <h4>Supported By:</h4>
+                                <div className={classes.supportedBy}>
 
-                            <Grid item xs={6} style={{}}>
-                                <h3>Supported By:</h3>
-                            </Grid>
-                            <Grid item xs={6}>
-                                <img className={classes.logo} src={process.env.PUBLIC_URL + '/supporter/oknWhite.png'} style={{ width: '136px' }} alt="" />
+                                    <div>
+                                        <img className={classes.logo} src={process.env.PUBLIC_URL + '/supporter/tsa.png'} alt="" />
+                                    </div>
+                                    <div >
+                                        <img className={classes.logo} src={process.env.PUBLIC_URL + '/supporter/d4d.png'} alt="" />
+                                    </div>
+                                    <div>
+                                        <img className={classes.logo} src={process.env.PUBLIC_URL + '/supporter/UKAID.png'} alt="" />
+                                    </div>
 
-                            </Grid>
-
-                            <Grid item xs={6}>
-                                <img className={classes.logo} src={process.env.PUBLIC_URL + '/supporter/tsa.png'} alt="" />
-                                <img className={classes.logo} src={process.env.PUBLIC_URL + '/supporter/d4d.png'} alt="" />
-                                <img className={classes.logo} src={process.env.PUBLIC_URL + '/supporter/UKAID.png'} alt="" />
+                                </div>
                             </Grid>
                         </Grid>
 

@@ -74,7 +74,7 @@ const styles = (theme) => ({
     },
 
     plainNavigation: {
-        fontSize: '19px',
+        fontSize: '1rem',
         color: "#fff",
         textTransform: 'capitalize',
     },
@@ -84,7 +84,8 @@ const styles = (theme) => ({
         textDecoration: 'none',
         color: '#fcfcfe',
         fontWeight: '500',
-        paddingLeft: '10px',
+        paddingLeft: '22px',
+        fontFamily: '"Lato", sans-serif',
         '&:hover': {
             background: 'none',
             fontWeight: '800px',
@@ -175,12 +176,14 @@ class Headers extends Component {
                         className={this.state.scroll >= 50 || this.props.name ? classes.headerSec : classes.header}>
                         <Toolbar className={classes.toolbar}>
                             <Typography variant="h6" color="inherit" style={{ flexGrow: 1 }}>
-                                <img className={this.state.scroll >= 50 || this.props.name ? classes.logoSec : classes.logo}
-                                    src={process.env.PUBLIC_URL + '/supporter/newokn.png'} alt="" />
+                                <Link to='/'>
+                                    <img className={this.state.scroll >= 50 || this.props.name ? classes.logoSec : classes.logo}
+                                        src={process.env.PUBLIC_URL + '/supporter/newokn.png'} alt="" />
+                                </Link>
                             </Typography>
                             <p className={`${classes.plainNavigation}`}>
                                 {navigationMenu.nav.map((navItem, index) => (
-                                    <Link key={index} color="inherit" className={classes.navButton + ' ' + 'nav-button'} style={{ fontFamily: '"Lato", sans-serif' }}
+                                    <Link key={index} color="inherit" className={classes.navButton + ' ' + 'nav-button'} style={{}}
                                         to={navItem.path}>{navItem.title}</Link>
                                 ))}
                             </p>
@@ -207,7 +210,10 @@ class Headers extends Component {
                     <List style={{ width: "180px" }}>
                         {navigationMenu.nav.map((navItem, index) => (
                             <ListItem button key={navItem.title}>
-                                <ListItemText primary={navItem.title} />
+                                <ListItemText>
+                                    <Link key={index} color="inherit" style={{ textDecoration: 'none', color: "#3F3D56" }}
+                                        to={navItem.path}>{navItem.title}</Link>
+                                </ListItemText>
                             </ListItem>
                         ))}
                     </List>
