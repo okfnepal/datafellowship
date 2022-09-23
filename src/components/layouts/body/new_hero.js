@@ -37,6 +37,7 @@ const styles = (theme) => ({
     },
     content: {
         width: '50%',
+        border: '2px solid red'
     },
     h1: {
         fontSize: '50px',
@@ -110,7 +111,7 @@ const styles = (theme) => ({
 });
 
 
-class Hero extends Component {
+class NewHero extends Component {
     apply() {
         return window.location.href = "https://docs.google.com/forms/d/1ki7U2WRPyWtvQAdnrqYZg9iC1LZsfHaivaVZEvC1tcA";
     }
@@ -156,5 +157,5 @@ class Hero extends Component {
     }
 }
 
-export default withStyles(styles)(Hero)
+export default withStyles(styles)(NewHero)
 

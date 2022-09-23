@@ -14,7 +14,9 @@ import ListItemText from '@material-ui/core/ListItemText';
 import './style.css';
 import { navigationMenu } from '../../data'
 import { Element, scroller } from 'react-scroll'
-import { Link } from 'react-router-dom'
+import { Redirect } from 'react-router-dom'
+import { withRouter, Link } from 'react-router-dom';
+
 
 
 const styles = (theme) => ({
@@ -22,7 +24,7 @@ const styles = (theme) => ({
         body: {
             margin: 0,
             padding: 0,
-            fontFamily: "\"Roboto\", \"Helvetica\", \"Arial\", sans-serif",
+            fontFamily: "\"Lato\", sans-serif",
         }
 
     },
@@ -32,12 +34,16 @@ const styles = (theme) => ({
         height: '115px',
         WebkitTransition: 'height ease-in-out 0.4s',
         MozTransition: 'height ease-in-out 0.4s',
+        right: '0',
+        left: '0',
     },
     headerSec: {
-        backgroundImage: 'linear-gradient(-45deg, #00d2ff 0%, #0bc1f6 5.91%, #29a5da 58.62%, #3a7bd5 80% )',
+        backgroundImage: 'linear-gradient(to right,#1b3e77, #1EA2CC)',
         boxShadow: 'none',
         opacity: '0.9',
         height: '70px',
+        right: '0',
+        left: '0',
         WebkitTransition: 'height ease-in-out 0.4s',
         MozTransition: 'height ease-in-out 0.4s',
     },
@@ -47,13 +53,13 @@ const styles = (theme) => ({
     },
 
     logo: {
-        height: '75px',
+        height: '60px',
         padding: '15px 0',
         WebkitTransition: 'height ease-in-out 0.4s',
         MozTransition: 'height ease-in-out 0.4s',
     },
     logoSec: {
-        height: '55px',
+        height: '40px',
         padding: '15px 0',
         WebkitTransition: 'height ease-in-out 0.4s',
         MozTransition: 'height ease-in-out 0.4s',
@@ -68,16 +74,18 @@ const styles = (theme) => ({
     },
 
     plainNavigation: {
-        fontSize: '19px',
+        fontSize: '1rem',
         color: "#fff",
         textTransform: 'capitalize',
     },
     navButton: {
         fontSize: '19px',
         textTransform: 'capitalize',
+        textDecoration: 'none',
         color: '#fcfcfe',
         fontWeight: '500',
-        paddingLeft: '10px',
+        paddingLeft: '22px',
+        fontFamily: '"Lato", sans-serif',
         '&:hover': {
             background: 'none',
             fontWeight: '800px',
@@ -109,8 +117,19 @@ class Headers extends Component {
     state = {
         open: false,
         scroll: 0,
-        navState: false
+        navState: false,
+        isLandingPage: this.props.landingPage,
     };
+
+    constuctor() {
+        this.routeChange = this.routeChange.bind(this);
+    }
+
+    routeChange(routerStr) {
+        let path = routerStr;
+        this.props.history.push(path);
+        console.log(this.props)
+    }
 
 
     scrollTo(elements) {
@@ -143,6 +162,7 @@ class Headers extends Component {
 
     componentDidMount() {
         window.addEventListener('scroll', this.handleScroll);
+        console.log('James name', this.props.name)
     }
 
 
@@ -153,23 +173,20 @@ class Headers extends Component {
             <Fragment>
                 <Element name="Home" className="element">
                     <AppBar position="static" color='secondary' position="fixed"
-                        className={this.state.scroll >= 50 ? classes.headerSec : classes.header}>
+                        className={this.state.scroll >= 50 || this.props.name ? classes.headerSec : classes.header}>
                         <Toolbar className={classes.toolbar}>
                             <Typography variant="h6" color="inherit" style={{ flexGrow: 1 }}>
                                 <Link to='/'>
-                                    <img className={this.state.scroll >= 50 ? classes.logoSec : classes.logo}
-                                        src={process.env.PUBLIC_URL + '/oknp.svg'} alt="" />
+                                    <img className={this.state.scroll >= 50 || this.props.name ? classes.logoSec : classes.logo}
+                                        src={process.env.PUBLIC_URL + '/supporter/newokn.png'} alt="" />
                                 </Link>
                             </Typography>
-                            <Typography className={`${classes.plainNavigation}`}>
+                            <p className={`${classes.plainNavigation}`}>
                                 {navigationMenu.nav.map((navItem, index) => (
-                                    <Button key={index} color="inherit" className={classes.navButton + ' ' + 'nav-button'}
-                                        onClick={() => this.scrollTo(navItem)}>
-                                        <Link key={index} color="inherit" className={classes.navButton + ' ' + 'nav-button'} style={{ textDecoration: 'none' }}
-                                            to={navItem.path}>{navItem.title}</Link>
-                                    </Button>
+                                    <Link key={index} color="inherit" className={classes.navButton + ' ' + 'nav-button'} style={{}}
+                                        to={navItem.path}>{navItem.title}</Link>
                                 ))}
-                            </Typography>
+                            </p>
                             <IconButton onClick={this.handleDrawerOpen} className={classes.menuButton} color="inherit"
                                 aria-label="Menu">
                                 <MenuIcon />
@@ -193,10 +210,10 @@ class Headers extends Component {
                     <List style={{ width: "180px" }}>
                         {navigationMenu.nav.map((navItem, index) => (
                             <ListItem button key={navItem.title}>
-                                <ListItemText >
+                                <ListItemText>
                                     <Link key={index} color="inherit" style={{ textDecoration: 'none', color: "#3F3D56" }}
                                         to={navItem.path}>{navItem.title}</Link>
-                                </ListItemText >
+                                </ListItemText>
                             </ListItem>
                         ))}
                     </List>

@@ -1,6 +1,6 @@
 const navigationMenu = {
-    nav: ['Home', 'About', 'Join Why?', 'Host organization', 'Faq', 'Apply']
-};
+    nav: [{ title: "Home", path: '/' }, { title: "LG Data Fellowship", path: "/lgdatafellowship" }, { title: "Open Data Fellowship", path: "/womendatafellowship" }],
+}
 
 const aboutFellowship = '"Open Data Fellowship - Women Edition" is an initiative of Open Knowledge Nepal. The main motive behind the fellowship is to increase the number of women leaders in the field of open data in Nepal and use the existing expertise of different organizations to provide a good exposure to women and equip them with valuable work experience, confidence and skills that will help them to better understand the data ecosystem and potential opportunities. The fellowships offer the opportunity to connect with business groups, governments and individuals in the data community. \n' +
     'During the time of fellowship, the fellow will visit various host organizations for a half day in-house training which will be followed by the one-month placement in a respective organization. For the first edition, we will be selecting 10 women fellows. The application will be open until 10th March 2019, 12 PM NST.'
@@ -83,11 +83,8 @@ const hostLogos = [
         url: '/hosts/KLL.png',
         name: 'Kathmandu living Labs',
         order: 1
-    }, {
-        url: '/hosts/pathway.png',
-        name: 'Pathway Technologies',
-        order: 1
-    }, {
+    },
+    {
         url: '/hosts/younginnovation.png',
         name: 'Young Innovation',
         order: 1
@@ -96,6 +93,17 @@ const hostLogos = [
         name: 'Yuwa',
         order: 1
     },
+    {
+        url: '/hosts/iids.svg',
+        name: 'Institute for Integrated Development Studies',
+        order: 1
+    },
+    {
+        url: '/hosts/naksa.png',
+        name: 'Naxa',
+        order: 1
+    },
+
 
 ];
 
@@ -121,11 +129,76 @@ const footerLink = [
         icon: 'icon-twitter'
     },
 ];
+
+const applicationSummary = {
+    title: 'Application must be completed online and consists of the following components:',
+    items: [{ item: 'Personal information' },
+    { item: 'Motivation Section' },
+    { item: 'CV/Resume (in pdf CV no longer than 2 pages)' }
+    ],
+
+}
+
+const selectionCriteria = {
+    title: 'Fellow must:',
+    items: [{ item: 'Be of 30 years old or younger by the time of applying for the fellowship.' },
+    { item: 'Be local from the project municipalities or willing to relocate to the project municipality.' },
+    { item: 'Have a bachelor’s degree IT related courses - Engineering, BSc CSIT, BCA, BIM, etc.' },
+    { item: 'Have knowledge of or interest in data sciences, open technology and open data.' },
+    { item: 'Be curious to work with municipality and Information Technology (IT) officers.' },
+    { item: 'Have strong knowledge and interest in learning data-related technologies including the software required for data scraping, cleaning, analysis and visualization.' },
+    { item: 'Have excellent communication skills in Nepali and English. Knowledge of the local language would be preferred.' },
+    { item: 'Have outstanding personal character and integrity.' },
+    { item: 'Have teamwork and collaborative skills.' },
+    ],
+
+}
+
+const keyResponsibilities = {
+    title: 'Fellows will be responsible for:',
+    items: [{ item: 'Collaborating with the IT officer and municipal data focal personnel for day-to-day capacity transfer.' },
+    { item: 'Working closely with the municipal personnel to compile datasets and standardize and integrate them into IDMS.' },
+    { item: 'Supporting their assigned municipality to administer and operationalize municipal level IDMS.' },
+    { item: 'Reporting and documenting the progress/challenges and sharing the case studies.' },]
+
+}
+
+const benifits = {
+    title: 'Benifits:',
+    items: [{ title: 'Networking', body: 'Online and in-person training on data pipeline and various other data aspects.', imageUrl: '/information/cash.png' },
+    { title: 'Earning', body: 'Stipend NRP 30,000 per month during the course of the Fellowship.', imageUrl: '/information/cash.png' },
+    { title: 'Networking', body: 'Opportunity to work closely with Mayor, CAO, IT professionals, and Government officials at the working station.', imageUrl: '/information/cash.png' },
+    { title: 'Upskilling', body: 'Opportunity to participate in various capacity-building workshops and training.', imageUrl: '/information/cash.png' },
+    { title: 'Certificates', body: 'Graduation Certificate of the fellowship.', imageUrl: '/information/cash.png' },
+    { title: 'Job', body: 'Potential job placement.', imageUrl: '/information/cash.png' },]
+
+}
+
+const projectMunicipality = [
+    {
+        Province: 'Lumbini Province',
+        District: 'Dang',
+        LocalGovernment: 'icon-about-us'
+    },
+    {
+        Province: 'Madhesh Province',
+        District: 'Parsa',
+        LocalGovernment: 'Birgunj Metropolitan City'
+    },
+    {
+        Province: 'Karnali Province',
+        District: 'Surkhet',
+        LocalGovernment: 'Simta Rural Municipality'
+    },
+]
+
 export {
     navigationMenu,
     whyShouldIJoin,
     aboutFellowship,
     FAQ,
     hostLogos,
-    footerLink
+    footerLink,
+    applicationSummary,
+    projectMunicipality
 }

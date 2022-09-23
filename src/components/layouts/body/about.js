@@ -1,9 +1,9 @@
-import React, {Fragment, Component} from 'react'
+import React, { Fragment, Component } from 'react'
 import Grid from '@material-ui/core/Grid';
-import {withStyles} from '@material-ui/core/styles';
+import { withStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
-import {aboutFellowship} from '../../data'
-import {Element} from "react-scroll/modules";
+import { aboutFellowship } from '../../data'
+import { Element } from "react-scroll/modules";
 
 
 const Styles = (theme) => ({
@@ -42,14 +42,14 @@ const Styles = (theme) => ({
 
 class About extends Component {
     render() {
-        const {classes} = this.props
+        const { classes } = this.props
         return (
             <Fragment>
                 <Element name="About" className="element">
                     <Grid className={classes.container} spacing={24} container
-                          direction="row"
-                          justify="space-between"
-                          alignItems="center">
+                        direction="row"
+                        justify="space-between"
+                        alignItems="center">
                         <Grid item xs={12} md={7}>
                             <Typography className={classes.sectionTitle} variant="h4" gutterBottom> Open Data
                                 Fellowship</Typography>
@@ -57,7 +57,7 @@ class About extends Component {
                             </Typography>
                         </Grid>
                         <Grid item xs={12} md={5}>
-                            <img className={classes.image} src={process.env.PUBLIC_URL + '/lady.png'} alt=""/>
+                            <img className={classes.image} src={process.env.PUBLIC_URL + '/lady.png'} alt="" />
                         </Grid>
                     </Grid>
                 </Element>
