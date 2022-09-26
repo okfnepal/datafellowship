@@ -70,7 +70,7 @@ class About extends Component {
                         alignItems="flex-start" >
                         <Grid item xs={12} md={4} className={classes.gridItem}>
                             <h4 className={classes.sectionTitleLeft} variant="h4" gutterBottom > Application Summary</h4>
-                            <p className={classes.body} variant="body1" gutterBottom>Application must be completed online and consists of the following components:
+                            <p className={classes.body} variant="body1" gutterBottom>The online fellowship application consists of the following components:
                             </p>
                             <ol>
                                 {applicationSummary.items.map((item, key) => {
@@ -99,13 +99,13 @@ class About extends Component {
                             </table>
                         </Grid>
                         <Grid item xs={12} md={4} className={classes.gridItem}>
-                            <h4 className={classes.sectionTitleLeft} variant="h4" gutterBottom > Project Duration</h4>
-                            <p className={classes.body} variant="body1" gutterBottom>Project duration is 5 months.
+                            <h4 className={classes.sectionTitleLeft} variant="h4" gutterBottom >Project Duration</h4>
+                            <p className={classes.body} variant="body1" gutterBottom>The fellowship program will run for 5 months.
                             </p>
                         </Grid>
                         <Grid item xs={12} md={4} className={classes.gridItem}>
                             {/* <img className={classes.image} src={process.env.PUBLIC_URL + '/lady.png'} alt="" /> */}
-                            <h4 className={classes.sectionTitleLeft} variant="h4" gutterBottom> Eligibility and Selection Criteria</h4>
+                            <h4 className={classes.sectionTitleLeft} variant="h4" gutterBottom>Fellowship Eligibility</h4>
                             <p className={classes.body} variant="body1" gutterBottom>Fellows must:
                             </p>
                             <ol>
@@ -118,7 +118,7 @@ class About extends Component {
                         </Grid>
                         <Grid item xs={12} md={4} className={classes.gridItem} >
                             {/* <img className={classes.image} src={process.env.PUBLIC_URL + '/lady.png'} alt="" /> */}
-                            <h4 className={classes.sectionTitleLeft} variant="h4" gutterBottom> Key Responsibilities</h4>
+                            <h4 className={classes.sectionTitleLeft} variant="h4" gutterBottom>Fellowship Responsibilities</h4>
                             <p className={classes.body} variant="body1" gutterBottom>Fellows will be responsible for:
                             </p>
                             <ol>
@@ -131,8 +131,8 @@ class About extends Component {
                         </Grid>
                         <Grid item xs={12} md={4} className={classes.gridItem} >
                             {/* <img className={classes.image} src={process.env.PUBLIC_URL + '/lady.png'} alt="" /> */}
-                            <h4 className={classes.sectionTitleLeft} variant="h4" gutterBottom> Benifits</h4>
-                            <p className={classes.body} variant="body1" gutterBottom>Fellows will be responsible for:
+                            <h4 className={classes.sectionTitleLeft} variant="h4" gutterBottom>Fellowship Benefits</h4>
+                            <p className={classes.body} variant="body1" gutterBottom>List of fellowship benefits:
                             </p>
                             <ol>
                                 {benifits.items.map((item, key) => {
@@ -144,7 +144,7 @@ class About extends Component {
                         </Grid>
                         <Grid item xs={12} md={4} className={classes.gridItem} >
                             {/* <img className={classes.image} src={process.env.PUBLIC_URL + '/lady.png'} alt="" /> */}
-                            <h4 className={classes.sectionTitleLeft} variant="h4" gutterBottom> Application Timeline</h4>
+                            <h4 className={classes.sectionTitleLeft} variant="h4" gutterBottom>Application Timeline</h4>
                             <p className={classes.body} variant="body1" gutterBottom>September 25, 2022 – Application opens
                             </p>
                             <p className={classes.body} variant="body1" gutterBottom>October 15, 2022 (12 PM NPT) – Application deadline
@@ -154,8 +154,8 @@ class About extends Component {
                         </Grid>
                         <Grid item xs={12} md={8} className={classes.gridItem} >
                             {/* <img className={classes.image} src={process.env.PUBLIC_URL + '/lady.png'} alt="" /> */}
-                            <h4 className={classes.sectionTitleLeft} variant="h4" gutterBottom> Contact</h4>
-                            <p className={classes.body} variant="body1" gutterBottom>For questions and queries, please contact: info@oknp.org
+                            <h4 className={classes.sectionTitleLeft} variant="h4" gutterBottom>Contact</h4>
+                            <p className={classes.body} variant="body1" gutterBottom>For questions and queries, please contact: <span style={{ textDecoration: 'underline', color: '#6B6DEE' }}>info@oknp.org</span>
                             </p>
                         </Grid>
                         <Grid></Grid>
