@@ -222,7 +222,7 @@ class About extends Component {
                             <img style={{ width: '100%', height: '3px' }} src={process.env.PUBLIC_URL + '/information/rect.png'} alt="" />
                         </Grid>
                         <Grid item xs={12} md={12}>
-                            <h2 className={classes.sectionTitle} variant="h4" gutterBottom >Benifits</h2>
+                            <h2 className={classes.sectionTitle} variant="h4" gutterBottom >Benefits</h2>
                             <div className={classes.benifitSection}>
                                 <Grid container direction='row' style={{ justifyContent: 'center' }}>
                                     {benifits.items.map((data, key) => {

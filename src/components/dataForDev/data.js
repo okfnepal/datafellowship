@@ -251,7 +251,7 @@ const benifits = {
             summary: "Receive resolute mentoring from OKN team members",
         },
         {
-            title: "Certificates",
+            title: "Certificate",
             body: "Graduation certificate of the fellowship.",
             imageUrl: "/information/certification.png",
             summary: "Grab the graduation certificate of the fellowship",
