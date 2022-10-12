@@ -176,7 +176,7 @@ const selectionCriteria = {
         },
         {
             item:
-                "Have a bachelor's or diploma degree IT related courses - Engineering, BSc CSIT, BCA, BIM, etc.",
+                "Have a bachelor's or diploma degree.",
         },
         {
             item:
