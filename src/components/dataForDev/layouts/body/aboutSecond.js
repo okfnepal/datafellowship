@@ -147,7 +147,7 @@ class About extends Component {
                             <h4 className={classes.sectionTitleLeft} variant="h4" gutterBottom>Application Timeline</h4>
                             <p className={classes.body} variant="body1" gutterBottom>September 25, 2022 – Application opens
                             </p>
-                            <p className={classes.body} variant="body1" gutterBottom>October 15, 2022 (12 PM NPT) – Application deadline
+                            <p className={classes.body} variant="body1" gutterBottom>October 22, 2022 (12 PM NPT) – Application deadline
                             </p>
                             <p className={classes.body} variant="body1" gutterBottom>October 20, 2022 – Selected fellows will be informed
                             </p>
