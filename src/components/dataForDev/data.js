@@ -308,7 +308,7 @@ const timelineData = [
     },
     {
         text: 'Selected Fellows Announcement',
-        date: 'October 28, 2022 ',
+        date: 'November 4, 2022 ',
         category: {
             tag: 'result',
             color: '#1B3E76'

@@ -149,7 +149,7 @@ class About extends Component {
                             </p>
                             <p className={classes.body} variant="body1" gutterBottom>October 22, 2022 (12 PM NPT) – Application deadline
                             </p>
-                            <p className={classes.body} variant="body1" gutterBottom>October 20, 2022 – Selected fellows will be informed
+                            <p className={classes.body} variant="body1" gutterBottom>November 4, 2022 – Selected fellows will be informed
                             </p>
                         </Grid>
                         <Grid item xs={12} md={8} className={classes.gridItem} >
