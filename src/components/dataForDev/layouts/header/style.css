@@ -1,15 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 .header{
     min-height: 80px;
     max-height: 80px;
     background: #fff !important;;
-    font-family: 'Lato', sans-serif;
+    font-family: 'DM Sans', sans-serif;
 
 }
 .toolbar{
     width: 80%;
     margin: auto;
-    font-family: 'Lato', sans-serif;
+    font-family: 'DM Sans', sans-serif;
 }
 .logo {
     top:0;
@@ -26,7 +26,7 @@
     left:0;
     right:0;
     padding: 40px;
-    font-family: 'Lato', sans-serif;
+    font-family: 'DM Sans', sans-serif;
     float: right;
 }
 

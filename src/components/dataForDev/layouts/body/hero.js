@@ -4,6 +4,7 @@ import { withStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 import { Link } from 'react-router-dom';
 import { heroContent } from '../../data';
+import color from '@material-ui/core/colors/amber';
 
 const styles = (theme) => ({
     hero: {
@@ -23,8 +24,8 @@ const styles = (theme) => ({
 
     },
     overlay: {
-        backgroundImage: 'linear-gradient(to right,#1b3e77, #1EA2CC)',
-        opacity: '0.9',
+        backgroundImage: 'linear-gradient(to right,#00d1ff, #fcfcfc)',
+        opacity: '0.86',
         position: 'absolute',
         top: '0px',
         width: '100%',
@@ -34,7 +35,7 @@ const styles = (theme) => ({
         color: '#fff',
         position: 'relative',
         margin: 'auto',
-        height: '100%',
+        // height: '100%',
         width: '85%',
         // border: '2px solid'
 
@@ -43,7 +44,7 @@ const styles = (theme) => ({
         width: '100%',
         // border: '2px solid green',
         // margin: 'auto',
-        marginTop: '14%',
+        marginTop: '8%',
         // textAlign: 'center'
     },
     heroText: {
@@ -70,36 +71,36 @@ const styles = (theme) => ({
         wordSpacing: '4px',
         margin: '0',
         marginBottom: '14px',
-        // maxWidth: '1020px'
+        color:"#304e68"
 
     },
     span: {
-        color: "#00D2FF",
+        color: "#112A46",
         fontWeight: '900',
     },
     button: {
-        marginTop: '30px',
+        marginTop: '20px',
         fontSize: '18px',
         fontWeight: '700',
         height: '45px',
-        width: '150px',
-        backgroundColor: '#00D2FF',
+        width: '180px',
+        backgroundColor: '#0da4ff',
         color: '#fff',
         border: 'none',
         textTransform: 'capitalize',
         boxShadow: ' 0px 3px 6px rgba(0, 0, 0, 0.16)',
         '&:hover': {
-            backgroundColor: '#0da4ff',
+            backgroundColor: '#00D2FF',
             border: 'none',
         }
     },
     learnmore_button: {
-        marginLeft: "30px",
-        marginTop: '30px',
+        marginLeft: "20px",
+        marginTop: '20px',
         fontSize: '18px',
         fontWeight: '700',
         height: '45px',
-        width: '150px',
+        width: '180px',
         // backgroundColor: '#00D2FF',
         // borderRadius: '23px',
         color: '#fff',
@@ -107,7 +108,7 @@ const styles = (theme) => ({
         textTransform: 'capitalize',
         boxShadow: ' 0px 3px 6px rgba(0, 0, 0, 0.16)',
         '&:hover': {
-            backgroundColor: '#0da4ff',
+            backgroundColor:'#00D2FF',
             border: 'none',
         }
     },
@@ -121,7 +122,7 @@ const styles = (theme) => ({
     },
     supportedBy: {
         display: 'flex',
-        alignItems: 'center',
+        alignItems: 'baseline',
         width: '80%',
         justifyContent: 'space-between'
     },
@@ -163,6 +164,7 @@ const styles = (theme) => ({
         supportedBy: {
             // display: 'flex',
             marginBottom: '4%',
+            width:'100%'
         },
 
     },
@@ -180,11 +182,10 @@ const styles = (theme) => ({
         },
         logo: {
             padding: '5%',
-            border: '2x solid red'
         },
         supportedBy: {
             // display: 'flex',
-            width: '90%',
+            width: '100%',
             marginBottom: '4%',
         },
     }
@@ -211,37 +212,34 @@ class Hero extends Component {
                             <Grid item xs={12} lg={10} className={classes.heroText}>
                                 <h1 className={classes.h1}>
                                     <span className={classes.span}>LOCAL GOVERNMENT (LG) DATA </span> FELLOWSHIP</h1>
-                                {/* <h2 className={classes.h2}> WOMEN EDITON</h2> */}
-                                <p className={classes.paragraph} style={{ marginRight: '3%' }}>{heroContent.description}</p>
-                                {/* <p className={classes.paragraph} style={{ marginRight: '5%', marginTop: '20px', fontSize: '18px' }}> <span style={{ textDecoration: 'underline', marginRight: '2px', color: '#00D2FF' }}>Learn More,</span> about application, eligibility and benifits.</p> */}
+                                <p className={classes.paragraph}>{heroContent.description}</p>
                                 <Button variant="outlined" className={classes.button} onClick={this.apply}>
                                     Apply
                                 </Button>
                                 <Button variant="outlined" className={classes.learnmore_button}>
-                                    <Link to='/lgdatafellowship' style={{ color: '#fff', textDecoration: 'none', }}>
+                                <Link to='/lgdatafellowship' style={{ color: '#fff', textDecoration: 'none', }}>
                                         Learn More
                                     </Link>
                                 </Button>
                             </Grid>
                         </Grid>
-                        <Grid container direction="row">
-                            <Grid item xs={12} md={6} style={{ width: '30%' }}>
-                                <h4>Supported By:</h4>
+                        <div style={{ marginTop:'10px'}}>
+                                <h4 style={{marginRight:"16px", color:'#453A46'}}>Supported By:</h4>
+                            <Grid container direction="row" justifyContent="flex-start" alignItems='baseline' >
                                 <div className={classes.supportedBy}>
-
-                                    <div>
-                                        <img className={classes.logo} src={process.env.PUBLIC_URL + '/supporter/tsa.png'} alt="" />
+                                    <div style={{marginRight:'8px'}}>
+                                        <img className={classes.logo} src={process.env.PUBLIC_URL + '/supporter/main/taf.png'} alt=""  height="60px" />
                                     </div>
-                                    <div >
-                                        <img className={classes.logo} src={process.env.PUBLIC_URL + '/supporter/d4d.png'} alt="" />
+                                    <div style={{marginRight:'16px'}}>
+                                        <img className={classes.logo} src={process.env.PUBLIC_URL + '/supporter/main/d4d.png'} alt="" height="60px" />
                                     </div>
                                     <div>
-                                        <img className={classes.logo} src={process.env.PUBLIC_URL + '/supporter/UKAID.png'} alt="" />
+                                        <img className={classes.logo} src={process.env.PUBLIC_URL + '/supporter/main/UKAID.png'} alt="" height="60px" />
                                     </div>
 
                                 </div>
                             </Grid>
-                        </Grid>
+                        </div>
 
                     </Grid>
                 </div>

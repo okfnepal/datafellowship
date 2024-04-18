@@ -24,7 +24,7 @@ const styles = (theme) => ({
         body: {
             margin: 0,
             padding: 0,
-            fontFamily: "\"Lato\", sans-serif",
+            fontFamily: "\"DM Sans\", sans-serif",
         }
 
     },
@@ -38,8 +38,10 @@ const styles = (theme) => ({
         left: '0',
     },
     headerSec: {
-        backgroundImage: 'linear-gradient(to right,#1b3e77, #1EA2CC)',
-        boxShadow: 'none',
+        // backgroundImage: 'linear-gradient(to right,#a9eefd, #1EA2CC)',
+        background:'#a9eefd',
+        // background: 'linear-gradient(-45deg, #00d2ff 0%, #0bc1f6 5.91%, #29a5da 58.62%, #3a7bd5 80% )',
+        boxShadow: '0 1px 1px -1px rgba(0,0,0,.2)',
         opacity: '0.9',
         height: '70px',
         right: '0',
@@ -59,7 +61,7 @@ const styles = (theme) => ({
         MozTransition: 'height ease-in-out 0.4s',
     },
     logoSec: {
-        height: '40px',
+        height: '48px',
         padding: '15px 0',
         WebkitTransition: 'height ease-in-out 0.4s',
         MozTransition: 'height ease-in-out 0.4s',
@@ -79,13 +81,14 @@ const styles = (theme) => ({
         textTransform: 'capitalize',
     },
     navButton: {
-        fontSize: '19px',
+        fontSize: '18px',
         textTransform: 'capitalize',
         textDecoration: 'none',
-        color: '#fcfcfe',
-        fontWeight: '500',
+        color: '#112A46', 
+        // here you change the menu nav color
+        fontWeight: '600',
         paddingLeft: '22px',
-        fontFamily: '"Lato", sans-serif',
+        fontFamily: '"DM Sans", sans-serif',
         '&:hover': {
             background: 'none',
             fontWeight: '800px',
@@ -162,7 +165,6 @@ class Headers extends Component {
 
     componentDidMount() {
         window.addEventListener('scroll', this.handleScroll);
-        console.log('James name', this.props.name)
     }
 
 

@@ -12,14 +12,14 @@ const styles = (theme) => ({
         // backgroundColor: '#195ec7',
         // backgroundImage: 'linear-gradient(-45deg, #00d2ff 0%, #0bc1f6 5.91%, #29a5da 58.62%, #3a7bd5 80% )',
         // backgroundColor: '#4E88D9',
-        backgroundColor: '#1b3e77',
+        backgroundColor: '#3399CC',
         borderRadius: '0px',
         textAlign: 'left',
         padding: '50px',
         color: '#fff',
     },
     link: {
-        color: '#fff',
+        color: 'rgb(8,28,33)',
         textDecoration: 'none',
         paddingRight: '10px',
     },
@@ -31,7 +31,7 @@ const styles = (theme) => ({
         // margin: 'auto',
         width: '50%',
         textAlign: 'left',
-        color: '#fff',
+        color:'rgb(8,28,33)'
     },
     [theme.breakpoints.down('sm')]: {
         basic: {
@@ -65,12 +65,12 @@ class Footer extends Component {
                             <div style={{ marginLeft: 'auto', width: '95%' }}>
                                 {footerLink.map((item, index) => (
                                     <a key={index} className={classes.link} href={item.url}>
-                                        <i className={item.icon + ' ' + classes.icon}> </i>
+                                        <img src={item.img} height="12px" style={{marginRight:'4px'}}/> 
                                         {item.title}</a>
                                 ))}
                                 <p className={classes.license} variant="body1">
                                     Content on this site, made by Open Knowledge Nepal, is licensed under a <a
-                                        href="https://creativecommons.org/licenses/by/4.0/" style={{ color: '#fff' }}>Creative
+                                        href="https://creativecommons.org/licenses/by/4.0/" style={{ color: 'rgb(8,28,33)' }}>Creative
                                         Commons Attribution 4.0 International License.</a>
                                 </p>
                                 <Typography variant="body1">

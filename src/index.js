@@ -5,6 +5,7 @@ import './index.css';
 import App from './components/app';
 import AboutUs from './components/new';
 import Fellowship from './components/about';
+import Fellows from './components/fellows';
 import * as serviceWorker from './serviceWorker';
 
 const routs = (
@@ -13,6 +14,7 @@ const routs = (
             <Route exact path="/" component={AboutUs} />
             <Route path="/womendatafellowship" component={App} />
             <Route path="/lgdatafellowship" component={Fellowship} />
+            <Route path="/fellows" component={Fellows} />
         </Switch>
     </ BrowserRouter >
 );

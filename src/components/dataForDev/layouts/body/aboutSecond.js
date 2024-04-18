@@ -43,7 +43,7 @@ const Styles = (theme) => ({
     sectionTitleLeft: {
         fontSize: '30px',
         fontWeight: '800',
-        color: '#3399CC',
+        color: '#453A46',
         textAlign: 'left',
         margin: '0',
     },
@@ -89,7 +89,7 @@ class About extends Component {
                             <table style={{ textAlign: 'left', width: '99%', padding: '0', borderCollapse: 'collapse', marginTop: '20px' }} className={classes.body}>
                                 {projectMunicipality.map((item, key) => {
                                     return (
-                                        <tr style={{ background: '#F5F5F5', border: '1px solid black' }}>
+                                        <tr style={{ background: '#F5F5F5', border: '1px solid black', color:'#453A46' }}>
                                             <th style={{ margin: '0', padding: '8px', borderRight: '1px solid black' }} >{item.Province}</th>
                                             <th style={{ margin: '0', padding: '8px', borderRight: '1px solid black' }}>{item.District}</th>
                                             <th style={{ margin: '0', padding: '8px' }}>{item.LocalGovernment}</th>
@@ -98,15 +98,16 @@ class About extends Component {
                                 })}
                             </table>
                         </Grid>
-                        <Grid item xs={12} md={4} className={classes.gridItem}>
-                            <h4 className={classes.sectionTitleLeft} variant="h4" gutterBottom >Project Duration</h4>
-                            <p className={classes.body} variant="body1" gutterBottom>The fellowship program will run for 5 months.
+                        <Grid item xs={12} md={4} className={classes.gridItem} >
+                            <h4 className={classes.sectionTitleLeft} variant="h4" gutterBottom>Contact</h4>
+                            <p className={classes.body} variant="body1" gutterBottom>Interested in collaborating, or obtaining answers to your questions?
+                                We're just an email away at
+                                : <span style={{ textDecoration: 'underline', color:"#5A1A8B" }}>info@oknp.org</span>
                             </p>
                         </Grid>
                         <Grid item xs={12} md={4} className={classes.gridItem}>
-                            {/* <img className={classes.image} src={process.env.PUBLIC_URL + '/lady.png'} alt="" /> */}
                             <h4 className={classes.sectionTitleLeft} variant="h4" gutterBottom>Fellowship Eligibility</h4>
-                            <p className={classes.body} variant="body1" gutterBottom>Fellows must:
+                            <p className={classes.body} variant="body1" gutterBottom>Fellows must meet the following criteria:
                             </p>
                             <ol>
                                 {selectionCriteria.items.map((item, key) => {
@@ -132,7 +133,7 @@ class About extends Component {
                         <Grid item xs={12} md={4} className={classes.gridItem} >
                             {/* <img className={classes.image} src={process.env.PUBLIC_URL + '/lady.png'} alt="" /> */}
                             <h4 className={classes.sectionTitleLeft} variant="h4" gutterBottom>Fellowship Benefits</h4>
-                            <p className={classes.body} variant="body1" gutterBottom>List of fellowship benefits:
+                            <p className={classes.body} variant="body1" gutterBottom>Fellows will receive:
                             </p>
                             <ol>
                                 {benifits.items.map((item, key) => {
@@ -142,23 +143,6 @@ class About extends Component {
                                 })}
                             </ol>
                         </Grid>
-                        <Grid item xs={12} md={4} className={classes.gridItem} >
-                            {/* <img className={classes.image} src={process.env.PUBLIC_URL + '/lady.png'} alt="" /> */}
-                            <h4 className={classes.sectionTitleLeft} variant="h4" gutterBottom>Application Timeline</h4>
-                            <p className={classes.body} variant="body1" gutterBottom>September 25, 2022 – Application opens
-                            </p>
-                            <p className={classes.body} variant="body1" gutterBottom>October 22, 2022 (12 PM NPT) – Application deadline
-                            </p>
-                            <p className={classes.body} variant="body1" gutterBottom>November 4, 2022 – Selected fellows will be informed
-                            </p>
-                        </Grid>
-                        <Grid item xs={12} md={8} className={classes.gridItem} >
-                            {/* <img className={classes.image} src={process.env.PUBLIC_URL + '/lady.png'} alt="" /> */}
-                            <h4 className={classes.sectionTitleLeft} variant="h4" gutterBottom>Contact</h4>
-                            <p className={classes.body} variant="body1" gutterBottom>For questions and queries, please contact: <span style={{ textDecoration: 'underline', color: '#6B6DEE' }}>info@oknp.org</span>
-                            </p>
-                        </Grid>
-                        <Grid></Grid>
                     </Grid>
                 </Element>
             </Fragment >

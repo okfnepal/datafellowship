@@ -1,5 +1,7 @@
+import { LocationCitySharp } from "@material-ui/icons";
+
 const navigationMenu = {
-    nav: [{ title: "Home", path: '/' }, { title: "LG Data Fellowship", path: "/lgdatafellowship" }, { title: "Open Data Fellowship", path: "/womendatafellowship" }],
+    nav: [{ title: "Home", path: '/' }, { title: "LG Data Fellowship", path: "/lgdatafellowship" },{ title: "Our Fellows", path: "/fellows" }, { title: "Open Data Fellowship", path: "/womendatafellowship" }],
 };
 
 const aboutFellowship =
@@ -135,21 +137,25 @@ const footerLink = [
         title: "About Us",
         url: "http://oknp.org/",
         icon: "icon-about-us",
+        img:'/icons/footer/about.png'
     },
     {
         title: "Email Us",
         url: "info@oknp.org",
         icon: "icon-email",
+        img:'/icons/footer/mail.png'
     },
     {
-        title: "Twitter",
+        title: "X/Twitter",
         url: "https://twitter.com/okfn_np",
         icon: "icon-twitter",
+        img:'/icons/footer/twitter.png'
     },
     {
         title: "Facebook",
         url: "https://www.facebook.com/okfnepal/",
-        icon: "icon-twitter",
+        icon: "icon-facebook",
+        img:'/icons/footer/facebook.png'
     },
 ];
 
@@ -168,7 +174,7 @@ const selectionCriteria = {
     items: [
         {
             item:
-                "Be local from the project municipalities or willing to relocate.",
+                "Be local residents of the project municipalities or willing to relocate.",
         },
         {
             item:
@@ -176,25 +182,25 @@ const selectionCriteria = {
         },
         {
             item:
-                "Have a bachelor's or diploma degree.",
+                "Completed or Currently pursuing bachelor's or hold diploma degree.",
         },
         {
             item:
-                "Have knowledge of or interest in data sciences, open technology, and open data.",
+                "Possess knowledge of or interest in data sciences, open technology, and open data.",
         },
         {
             item:
-                "Be curious to work with the municipality and IT officers.",
+                "Demonstrate curiosity to collaborate with municipality and IT officers.",
         },
         {
             item:
-                "Have strong knowledge and interest in learning data-related technologies.",
+                "Have a strong knowledge base and a keen interest in learning data-related technologies.",
         },
         {
             item:
-                "Have good communication skills in Nepali and English.",
+                "Exhibit good communication skills in Nepali and English.",
         },
-        { item: "Be a team player and have collaborative skills." },
+        { item: "Be team players with collaborative skills." },
     ],
 };
 
@@ -232,35 +238,35 @@ const benifits = {
         },
         {
             title: "Earning",
-            body: "Monthly stipend of NRP 30,000 per month.",
+            body: "Monthly stipend of NPR 15,000 per month.",
             imageUrl: "/information/money.png",
-            summary: "Monthly stipend for period of fellowship",
+            summary: "Receive a monthly stipend for the duration of the fellowship",
         },
         {
             title: "Networking",
             body:
-                "Training on data pipeline and various other data management aspects.",
+                "Opportunity to work closely with government officials",
             imageUrl: "/information/networking.png",
-            summary: "Opportunity to work closely with government officials",
+            summary: "Have the opportunity to work closely with government officials",
         },
         {
             title: "Mentoring",
             body:
                 "Resolute mentoring from OKN team members.",
             imageUrl: "/information/team.png",
-            summary: "Receive resolute mentoring from OKN team members",
+            summary: "Receive dedicated mentoring from OKN team members",
         },
         {
             title: "Certificate",
             body: "Graduation certificate of the fellowship.",
             imageUrl: "/information/certification.png",
-            summary: "Grab the graduation certificate of the fellowship",
+            summary: "Obtain a graduation certificate upon completion of the fellowship",
         },
         {
             title: "Placement",
-            body: "Get the opportunity of potential job placement.",
+            body: "Opportunity for potential job placement.",
             imageUrl: "/information/interview.png",
-            summary: "Get the opportunity of potential job placement",
+            summary: "Be considered for potential job placements",
 
         },
     ],
@@ -268,19 +274,35 @@ const benifits = {
 
 const projectMunicipality = [
     {
-        Province: "Madhesh Province",
-        District: "Parsa",
+        Location: "Parsa, Madhesh Province",
         LocalGovernment: "Birgunj Metropolitan City",
+        Province:"Madhesh Province",
+        District:"Parsa"
+
     },
     {
-        Province: "Lumbini Province",
-        District: "Dang",
+        Location: "Dang, Lumbini Province",
         LocalGovernment: "Tulsipur Sub-Metropolitan City",
+        Province:"Lumbini Province",
+        District:"Dang"
     },
     {
-        Province: "Karnali Province",
-        District: "Surkhet",
+        Location: "Dhanusha, Madhesh Province",
+        LocalGovernment: "Janakpurdham Sub-Metropolitan City",
+        Province:"Madhesh Province",
+        District:"Dhanusha"
+    },
+    {
+        Location: "Surkhet, Karnali Province",
         LocalGovernment: "Lekbesi Municipality",
+        Province:"Lumbini Province",
+        District:"Surkhet"
+    },
+    {
+        Location: "Rupandehi, Lumbini Province",
+        LocalGovernment: "Suddhodhan Rural Municipality",
+        Province:"Lumbini Province",
+        District:"Rupandehi"
     },
 ];
 
@@ -317,8 +339,47 @@ const timelineData = [
 ]
 
 const heroContent = {
-    description: "The LG Data fellowship aims to assist municipal bodies in getting the data digitized and better used for decision-making. It offers the opportunity to work closely with various personnel in municipalities and other stakeholders. During the fellowship, the fellow will go through a series of training to sharpen their data skills and be placed at assigned municipalities to administer and operationalize Integrated Data Management System (IDMS). The application will be open until 22nd October 2022, 12 PM NPT."
+    description: "The LG Data Fellowship aims to assist municipal bodies in digitizing their data for improved decision-making. It offers the opportunity to work closely with various personnel in municipalities and other stakeholders. During the fellowship, participants will undergo a series of training sessions to enhance their data skills. They will then be placed at assigned municipalities to administer and operationalize the Integrated Data Management System (IDMS)."
 }
+
+const fellows = [
+    {
+        name :"Bibek Gaha",
+        id:"bibek",
+        time:'Dec 2022 - now',
+        location: "LG Data Fellow, Lekbesi Municipality",
+        imgSrc: "/lg_fellows/bibek.png",
+        bio: "Bibek Gaha is an undegraduate student, currently engaged as LG Data Fellow for Lekbeshi. He is energetic, friendly and enjoys solving complex problems. He is a quick learner and thirsty for learning new things. He loves playing games, cooking, helping others, and listening to music. He is based in Lekbeshi Municipality, Surkhet."
+
+    },
+    {
+        name :"Drishya KC",
+        id:"drishya",
+        time:'Sept 2023 - now',
+        location: "LG Data Fellow, Tulsipur Sub-Metropolitan City",
+        imgSrc:"/lg_fellows/drishya.png",
+        bio: "Drishya K.C is an agriculture graduate who loves nature and enjoys learning new things. She worked as a Data Fellow with Tuslipur Sub-Metropolitan City, where she used data to help make decisions for the community. Drishya grew up surrounded by nature, which inspired her to study agriculture and care for the environment. She's curious and loves reading books and traveling to different places. In her free time, you can find her hiking or exploring cities. Drishya is determined to make a positive impact in her field and hopes to create a better world for everyone by using her knowledge and passion for nature."
+
+    },
+    {
+        name :"Suraj Kumar Mahato",
+        id:"suraj",
+        time:'Dec 2022 - now',
+        location: "LG Data Fellow, Birgunj Metropolitan City",
+        imgSrc:"/lg_fellows/suraj.png",
+        bio: "Suraj Kumar Mahato is currently pursuing a Bachelor of Business Studies (BBS) degree from Thakur Ram Multiple Campus, Birgunj. He is energetic, friendly, and loves nature. He enjoys solving complex problems and always tries to help others with his persuasive communication and decision-making skills."
+
+    },
+    {
+        name :"Ganga Kandel",
+        id:"ganga",
+        time:'Dec 2022 - Jun 2023',
+        location: "LG Data Fellow, Tulsipur Sub-Metropolitan City",
+        imgSrc:"/lg_fellows/ganga.png",
+        bio: "Ganga Kandel is a forestry graduate from the Institute of Forestry, Pokhara. Being a technical subject student, she is a nature enthusiast and concerned about nature conservation. She is an ambivert girl and a quick learner who is always thirsty of learning new things. She loves exploring new places, reading books of various genres, gardening, cooking, helping others, and learning new things."
+
+    },
+]
 
 export {
     navigationMenu,
@@ -334,5 +395,6 @@ export {
     benifits,
     aboutDataFellowship,
     timelineData,
-    heroContent
+    heroContent,
+    fellows
 };
