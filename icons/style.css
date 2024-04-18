@@ -51,6 +51,9 @@ i {
 .icon-email:before {
   content: "\e908";
 }
+.icon-x:before {
+  content: "\0143";
+}
 .icon-about-us:before {
   content: "\e909";
 }
