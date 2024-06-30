@@ -22,7 +22,7 @@ const Styles = (theme) => ({
     sectionTitle: {
         fontSize: '26px',
         fontWeight: '800',
-        color: '#453A46',
+        color: '#3399CC',
         textAlign: 'center',
         margin: '0',
         padding: '50px 0',

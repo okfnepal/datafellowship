@@ -33,8 +33,8 @@ const Styles = (theme) => ({
         fontSize: '26px',
         fontWeight: '800',
         // blue one below
-        // color: '#3399CC',
-        color: '#453A46',
+        color: '#3399CC',
+        // color: '#453A46',
         textAlign: 'center',
         margin: '0',
     },

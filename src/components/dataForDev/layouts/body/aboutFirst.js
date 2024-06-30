@@ -33,7 +33,7 @@ const Styles = (theme) => ({
     sectionTitle: {
         fontSize: '30px',
         fontWeight: '800',
-        color: '#453A46',
+        color: '#3399CC',
         marginBottom: '20px'
     },
     body: {

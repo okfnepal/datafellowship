@@ -1,7 +1,6 @@
 import React, { Fragment, Component } from 'react'
 import Grid from '@material-ui/core/Grid';
 import { withStyles } from '@material-ui/core/styles';
-import Typography from '@material-ui/core/Typography';
 import { aboutFellowship, applicationSummary, benifits, keyResponsibilities, projectMunicipality, selectionCriteria } from '../../data'
 import { Element } from "react-scroll/modules";
 
@@ -43,7 +42,7 @@ const Styles = (theme) => ({
     sectionTitleLeft: {
         fontSize: '30px',
         fontWeight: '800',
-        color: '#453A46',
+        color: '#3399CC',
         textAlign: 'left',
         margin: '0',
     },

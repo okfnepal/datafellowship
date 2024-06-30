@@ -295,7 +295,7 @@ const projectMunicipality = [
     {
         Location: "Surkhet, Karnali Province",
         LocalGovernment: "Lekbesi Municipality",
-        Province:"Lumbini Province",
+        Province:"Karnali Province",
         District:"Surkhet"
     },
     {
@@ -377,6 +377,24 @@ const fellows = [
         location: "LG Data Fellow, Tulsipur Sub-Metropolitan City",
         imgSrc:"/lg_fellows/ganga.png",
         bio: "Ganga Kandel is a forestry graduate from the Institute of Forestry, Pokhara. Being a technical subject student, she is a nature enthusiast and concerned about nature conservation. She is an ambivert girl and a quick learner who is always thirsty of learning new things. She loves exploring new places, reading books of various genres, gardening, cooking, helping others, and learning new things."
+
+    },
+    {
+        name :"Kamlesh Kumar Thakur",
+        id:"kamlesh",
+        time:'Jun 2024 - now',
+        location: "LG Data Fellow, Janakpurdham Sub-Metropolitan City",
+        imgSrc:"/lg_fellows/kamlesh.png",
+        bio: "Kamlesh Kumar Thakur, from Janakpurdham-09, Dhanusha, Madhesh Province, is pursuing a Bachelor's in Journalism and Mass Communication (BJMC) at Makwanpur Multiple College, Tribhuvan University. Passionate about journalism, he has a strong educational background, practical experience, and various certifications in data analysis and news fact-checking. Proficient in Maithili, Nepali, English, and Hindi, Kamlesh excels in communication and has expertise in branding, training, and community mobilization. His dedication, adaptability, and innovative spirit make him a valuable asset for NGOs and broadcast media, poised for mid-level roles in journalism and communication."
+
+    },
+    {
+        name :"Nishan Thapa",
+        id:"nishan",
+        time:'Jun 2024 - now',
+        location: "LG Data Fellow, Suddhodhan Rural Municipality",
+        imgSrc:"/lg_fellows/nishan.png",
+        bio: "Nishan Thapa hails from Tilottama-2. He is currently an undergraduate student in his second year of BBS (Bachelor of Business Studies) at Butwal Multiple Campus. His academic journey and commitment to learning underpin his role as a Local Governance Data Fellow at Suddhodhan Rural Municipality, where he is dedicated to leveraging data to enhance local governance and community development."
 
     },
 ]
