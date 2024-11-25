@@ -389,12 +389,12 @@ const fellows = [
 
     },
     {
-        name :"Nishan Thapa",
-        id:"nishan",
-        time:'Jun 2024 - now',
+        name :"Saurav Khanal",
+        id:"saurav",
+        time:'November - now',
         location: "LG Data Fellow, Suddhodhan Rural Municipality",
-        imgSrc:"/lg_fellows/nishan.png",
-        bio: "Nishan Thapa hails from Tilottama-2. He is currently an undergraduate student in his second year of BBS (Bachelor of Business Studies) at Butwal Multiple Campus. His academic journey and commitment to learning underpin his role as a Local Governance Data Fellow at Suddhodhan Rural Municipality, where he is dedicated to leveraging data to enhance local governance and community development."
+        imgSrc:"/lg_fellows/saurav.jpeg",
+        bio: "Saurav Khanal is the Local Government (LG) Data Fellow for Suddhodhan Municipality. He has a background in various computer skills and three years of experience providing IT services and creating digital marketing content. At the Local Government (LG) Data Fellowship, he collaborates closely with the IT officer and municipal data focal personnel, focusing on reporting, documenting progress, addressing challenges, and capturing learnings."
 
     },
 ]
