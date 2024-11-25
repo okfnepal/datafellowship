@@ -394,7 +394,7 @@ const fellows = [
         time:'November - now',
         location: "LG Data Fellow, Suddhodhan Rural Municipality",
         imgSrc:"/lg_fellows/saurav.jpeg",
-        bio: "Saurav Khanal is the Local Government (LG) Data Fellow for Suddhodhan Municipality. He has a background in various computer skills and three years of experience providing IT services and creating digital marketing content. At the Local Government (LG) Data Fellowship, he collaborates closely with the IT officer and municipal data focal personnel, focusing on reporting, documenting progress, addressing challenges, and capturing learnings."
+        bio: "Saurav Khanal serves as the Local Government (LG) Data Fellow for  Suddhodhan Rural Municipality. He has a strong background in various computer skills and three years of experience in IT services and digital marketing content creation. As an LG Data Fellow, he works closely with the IT officer and municipal data focal personnel, focusing on reporting, documenting progress, addressing challenges, and capturing key learnings."
 
     },
 ]
