@@ -380,18 +380,18 @@ const fellows = [
 
     },
     {
-        name :"Kamlesh Kumar Thakur",
-        id:"kamlesh",
-        time:'Jun 2024 - now',
+        name :"Niva Kumari Sah",
+        id:"niva",
+        time:'2024 Dec - now',
         location: "LG Data Fellow, Janakpurdham Sub-Metropolitan City",
-        imgSrc:"/lg_fellows/kamlesh.png",
-        bio: "Kamlesh Kumar Thakur, from Janakpurdham-09, Dhanusha, Madhesh Province, is pursuing a Bachelor's in Journalism and Mass Communication (BJMC) at Makwanpur Multiple College, Tribhuvan University. Passionate about journalism, he has a strong educational background, practical experience, and various certifications in data analysis and news fact-checking. Proficient in Maithili, Nepali, English, and Hindi, Kamlesh excels in communication and has expertise in branding, training, and community mobilization. His dedication, adaptability, and innovative spirit make him a valuable asset for NGOs and broadcast media, poised for mid-level roles in journalism and communication."
+        imgSrc:"/lg_fellows/niva.png",
+        bio: "Niva Kumari Sah is a Local Government (LG) Data Fellow with expertise in finance and data analysis. A native of Janakpurdham, she holds a Bachelor’s in Business Studies (BBS) and is pursuing a Master’s in Business Studies (MBS) with a specialization in Finance. In her current role, Niva works closely with municipal IT officers and data focal points to enhance data reporting, address challenges, and provide actionable insights for local government decision-making."
 
     },
     {
         name :"Saurav Khanal",
         id:"saurav",
-        time:'November - now',
+        time:'2024 Nov - now',
         location: "LG Data Fellow, Suddhodhan Rural Municipality",
         imgSrc:"/lg_fellows/saurav.jpeg",
         bio: "Saurav Khanal serves as the Local Government (LG) Data Fellow for  Suddhodhan Rural Municipality. He has a strong background in various computer skills and three years of experience in IT services and digital marketing content creation. As an LG Data Fellow, he works closely with the IT officer and municipal data focal personnel, focusing on reporting, documenting progress, addressing challenges, and capturing key learnings."
